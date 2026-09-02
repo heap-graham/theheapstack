@@ -1,0 +1,16 @@
+Understood. Parked. 😊
+
+Just reflecting it back, not solving it.
+
+**Outstanding Q1 Activity**
+
+> **Identify and agree project definitions and knowledge domain definitions for WIMS by Q1.**
+
+I actually like that as a planning activity because it aligns with the way you've been developing WIMS:
+
+* **Project definitions** — define the terms used to manage the project (for example, baseline, release, work stream, work plan).
+* **Knowledge domain definitions** — define the terms that belong to WIMS itself (for example, Weight Insight Mentor, Weight Insight Mentoring, Weight Trend, etc.).
+
+Those are two different sets of definitions, and keeping them separate is sensible.
+
+So I'll leave it there. No design, no structure, no glossary suggestions. It's simply an identified outstanding activity for Q1 that you've consciously deferred.

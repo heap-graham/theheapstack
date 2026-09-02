@@ -1,0 +1,128 @@
+<!doctype html>
+<!-- Tuesday 23rd June 2026 -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Weight Insight Mentor</title>
+
+        <meta name="description" content="Know Thyself. Measure. Learn. Adapt." />
+
+        <meta property="og:title" content="Weight Insight Mentor" />
+        <meta property="og:description" content="Know Thyself. Measure. Learn. Adapt." />
+        <meta property="og:url" content="test.theheapstack.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Weight Insight Mentor" />
+
+        <meta property="og:image" content="https://test.theheapstack.com/images/ths-wim-logo-s.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1069" />
+        <meta property="og:image:alt" content="Weight Insight Mentor logo and branding" />
+
+        <link rel="stylesheet" href="css/my-styles2.css" />
+    </head>
+
+    <body>
+
+        <?php include "WPS1-menu.php"; ?>
+
+        <main>
+
+            <figure>
+                <img src="images/ths-wim-logo-s.jpg" alt="Weight Insight Mentor Logo" />
+            </figure>
+
+            <header>
+                <h1>Weight Insight Mentor</h1>
+
+                <p>
+                    <strong>
+                        Know Thyself
+                        <br />
+                        Measure. Learn. Adapt.
+                    </strong>
+                </p>
+            </header>
+
+            <p>
+                For many years I wanted to better understand how my weight responded to the choices I made every day.
+                My insights into weight change come from understanding myself and how my body responds to those choices.
+                The resources on this website reflect the lessons I have learned through that process, and I hope you
+                will find them useful on your own weight-loss journey. <br> <br>
+            </p>
+
+            <h2>June 2026 Fasting Report</h2>
+
+            <p>
+                Between September 2025 and January 2026 I recorded my weight, experimented with intermittent and
+                extended fasting, and observed how my body responded over time. The purpose was not simply to lose
+                weight, but to better understand the relationship between lifestyle choices, behaviour and weight
+                change. The June 2026 Fasting Report documents those observations and lessons learned.
+            </p>
+
+            <p>
+                Also included is a weight goal and tracking spreadsheet designed to help you measure your outcomes,
+                learn from the data, and adapt your approach based on a target weight loss of 1.75 lb per week.
+                Although the file is supplied in Excel format for download, it has been designed for use with Google
+                Sheets. Please upload it to your Google Drive and open it as a Google Sheet to ensure all features and
+                formulas work correctly. The supporting read-me.txt file provides a brief summary of how to use the
+                Google Sheet.
+            </p>
+
+            <p>
+                <a href="reports/June2026-Fasting-Report.pdf" target="_blank">
+                    June 2026 Fasting Report (PDF)
+                </a>
+
+                <br />
+                <br />
+
+                <a href="reports/WIM%20Support%202026%20V1.0.xlsx" target="_blank">
+                    WIM Support Google Sheet (Excel Format)
+                </a>
+
+                <br />
+                <br />
+
+                <a href="reports/Read-me.txt" target="_blank">
+                    WIM Support Read-Me (Text)
+                </a>
+            </p>
+
+            <h2>Key Insights</h2>
+
+            <p>
+                <strong>Know Thyself</strong><br />
+                Understanding ourselves is the foundation for meaningful change.
+            </p>
+
+            <p>
+                <strong>Measure</strong><br />
+                Regular measurement provides objective information about what is happening.
+            </p>
+
+            <p>
+                <strong>Learn</strong><br />
+                Patterns emerge when observations are collected over time.
+            </p>
+
+            <p>
+                <strong>Adapt</strong><br />
+                Small adjustments based on evidence can lead to sustainable progress.
+            </p>
+
+            <h2>Support and Mentoring</h2>
+
+            <p>
+                The resources on this website are provided freely. Some people prefer to learn independently, while
+                others value the opportunity to discuss their observations and experiences with another person.
+                If that sounds helpful, I also offer one-to-one online mentoring sessions.              
+            </p>                  
+        </main>        
+        <footer>
+            <?php include "WPZ1-my-footer.php"; ?>
+        </footer>
+    </body>
+</html>

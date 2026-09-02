@@ -1,0 +1,488 @@
+/* ==========================================================================
+   CSS PROPERTY ORDERING GUIDE
+   
+   Always organize properties within every CSS selector block using this 
+   strict 1-to-7 sequence:
+
+   1. LAYOUT      - display, flex/grid properties, justify/align, position, 
+                    top/right/bottom/left, float, clear, z-index, visibility, 
+                    resize, cursor
+   2. SIZE        - width, height, max-width, max-height, min-width, min-height
+   3. SPACING     - margin, padding, gap, row-gap, column-gap
+   4. BORDER      - border, border-radius, border-collapse, outline
+   5. BACKGROUND  - background, background-color, background-image, linear-gradient
+   6. TEXT        - font-family, font-size, font-weight, color, text-align,
+                    line-height, text-decoration, white-space, list-style
+   7. EFFECTS     - box-shadow, text-shadow, opacity, transform, transition, 
+                    animation, filter
+   ========================================================================== */
+
+/* --- 0. RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HEADER CENTERING BLOCK --- */
+header {
+    display: block; /* 1. Layout */
+    margin-bottom: 20px; /* 3. Spacing */
+    text-align: center; /* 6. Text */
+}
+
+/* --- GLOBAL STYLES --- */
+html,
+body {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    height: 100%; /* 2. Size */
+    min-height: 100vh; /* 2. Size */
+    margin: 0; /* 3. Spacing */
+    padding: 0; /* 3. Spacing - Set to 0 to keep navigation flush against view margins */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+    color: darkblue; /* 6. Text */
+    font-family: Arial, sans-serif; /* 6. Text */
+    line-height: 1.5; /* 6. Text */
+}
+
+/* --- REUSABLE NAVIGATION STYLES --- */
+nav {
+    margin-top: 0; /* 3. Spacing */
+    padding: 0; /* 3. Spacing */
+    background-color: black; /* 5. Background */
+}
+
+nav ul {
+    display: flex; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    max-width: 1200px; /* 2. Size */
+    margin: 0; /* 3. Spacing */
+    padding: 0; /* 3. Spacing */
+    list-style-type: none; /* 6. Text */
+}
+
+nav ul li {
+    flex: 1; /* 1. Layout */
+    min-width: max-content; /* 2. Size */
+}
+
+nav a {
+    display: block; /* 1. Layout */
+    padding: 14px 10px; /* 3. Spacing */
+    color: white; /* 6. Text */
+    text-align: center; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    white-space: nowrap; /* 6. Text */
+}
+
+nav a:hover {
+    background-color: whitesmoke; /* 5. Background */
+    color: darkblue; /* 6. Text */
+}
+
+/* --- TOP HORIZONTAL MENU BAR (Shifted to Clear Left Sidebar) --- */
+.top-menu-bar {
+    width: 100%; /* 2. Size */
+    background-color: black; /* 5. Background */
+    border-bottom: 2px solid darkblue; /* 4. Border */
+}
+
+.top-menu-bar ul {
+    display: flex; /* 1. Layout */
+    max-width: 1200px; /* 2. Size */
+    margin: 0 auto 0 250px; /* 3. Spacing - Shifts links exactly 250px left to clear the sidebar */
+    padding: 0 40px; /* 3. Spacing */
+    list-style-type: none; /* 6. Text */
+}
+
+.top-menu-bar li {
+    flex: none; /* 1. Layout - Keeps text link pads constrained to default natural size */
+}
+
+.top-menu-bar a {
+    display: block; /* 1. Layout */
+    padding: 14px 20px; /* 3. Spacing */
+    color: white; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-size: 1rem; /* 6. Text */
+}
+
+.top-menu-bar a:hover,
+.top-menu-bar a.active {
+    background-color: whitesmoke; /* 5. Background */
+    color: darkblue; /* 6. Text */
+}
+
+/* --- CONTENT FLEXBOX VIEWPORT CONTAINER WRAPPERS --- */
+.app-content-wrapper {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex: 1; /* 1. Layout */
+    overflow: visible; /* 1. Layout - Bounds scrolling limits securely inside viewport frame */
+}
+
+.layout-container {
+    display: flex !important; /* 1. Layout - Core element block alignment lock */
+    flex-direction: row !important; /* 1. Layout - Guarantees horizontal column lane direction placement */
+    flex: 1; /* 1. Layout */
+    width: 100%; /* 2. Size */
+}
+
+/* --- LEFT & RIGHT COLUMN SIDEBAR ASIDES --- */
+.left-menu, 
+.right-menu {
+    width: 250px; /* 2. Size */
+    flex-shrink: 0; /* 1. Layout - Defends menu row constraints from getting squished by main text sizes */
+    overflow-y: auto; /* 1. Layout */
+    padding: 20px 30px; /* 3. Spacing */
+    border: 1px solid rgba(0, 0, 139, 0.2); /* 4. Border */
+    background-color: rgba(255, 255, 255, 0.2); /* 5. Background - Clean aesthetic integration overlay */
+}
+
+.left-menu {
+    border-right: 2px solid darkblue; /* 4. Border */
+}
+
+.right-menu {
+    border-left: 2px solid darkblue; /* 4. Border */
+}
+
+.left-menu h2, 
+.right-menu h2 {
+    margin-bottom: 15px; /* 3. Spacing */
+    text-align: left; /* 6. Text - Forces sidebar labels away from top global center text rule */
+    font-size: 1.3rem; /* 6. Text */
+}
+
+.left-menu ul, 
+.right-menu ul {
+    list-style-type: none; /* 6. Text */
+}
+
+.left-menu li, 
+.right-menu li {
+    margin-bottom: 12px; /* 3. Spacing */
+}
+
+.left-menu a, 
+.right-menu a {
+    display: block; /* 1. Layout */
+    padding: 6px 0; /* 3. Spacing */
+    color: darkblue; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-size: 1.05rem; /* 6. Text */
+}
+
+.left-menu a:hover, 
+.right-menu a:hover {
+    text-decoration: underline; /* 6. Text */
+    color: black; /* 6. Text */
+}
+
+/* --- MAIN CONTENT AREA --- */
+main {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex-grow: 1; /* 1. Layout */
+    justify-content: flex-start; /* 1. Layout */
+    overflow-y: visible; /* 1. Layout - Keeps primary reading frame scrollable independently */
+    width: 100%; /* 2. Size */
+    max-width: 900px; /* 2. Size */
+    margin: 0 auto; /* 3. Spacing */
+    padding: 40px; /* 3. Spacing - Restored breathing room for center main texts */
+}
+
+/* --- HEADINGS & TEXT --- */
+h1 {
+    font-size: 26px; /* 6. Text */
+}
+
+h2 {
+    font-size: 22px; /* 6. Text */
+}
+
+p {
+    margin-bottom: 10px; /* 3. Spacing */
+    font-size: 1.1rem; /* 6. Text */
+    line-height: 1.7; /* 6. Text */
+    text-align: justify; /* 6. Text */
+}
+
+header,
+h1,
+h2 {
+    text-align: center; /* 6. Text */
+}
+
+.left-heading {
+    text-align: left;
+}
+
+header p {
+    margin-bottom: 0; /* 3. Spacing */
+    text-align: center; /* 6. Text */
+}
+
+p:last-of-type {
+    margin-bottom: 0; /* 3. Spacing */
+}
+
+/* --- IMAGES & MEDIA --- */
+figure {
+    padding: 20px; /* 3. Spacing */
+    text-align: center; /* 6. Text */
+}
+
+figure img {
+    width: 25%; /* 2. Size */
+    max-width: 600px; /* 2. Size */
+    height: auto; /* 2. Size */
+    border: 1px solid white; /* 4. Border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 7. Effects */
+}
+
+/* --- FORMS --- */
+form {
+    max-width: 70%; /* 2. Size */
+    margin: 20px auto 0 auto; /* 3. Spacing */
+    padding: 20px; /* 3. Spacing */
+    border: 1px solid smokewhite; /* 4. Border */
+    border-radius: 5px; /* 4. Border */
+}
+
+label {
+    display: block; /* 1. Layout */
+    margin-top: 10px; /* 3. Spacing */
+    font-weight: bold; /* 6. Text */
+}
+
+input,
+textarea {
+    width: 80%; /* 2. Size */
+    margin-top: 5px; /* 3. Spacing */
+    padding: 8px; /* 3. Spacing */
+    border: 1px solid #ccc; /* 4. Border */
+    border-radius: 4px; /* 4. Border */
+}
+
+textarea {
+    resize: vertical; /* 1. Layout */
+    height: 150px; /* 2. Size */
+}
+
+button {
+    cursor: pointer; /* 1. Layout */
+    margin-top: 15px; /* 3. Spacing */
+    padding: 10px 15px; /* 3. Spacing */
+    border: none; /* 4. Border */
+    border-radius: 4px; /* 4. Border */
+}
+
+button:hover {
+    background-color: whitesmoke; /* 5. Background */
+}
+
+/* --- TABLE OF CONTENTS STYLING --- */
+#table-of-contents {
+    margin: 30px 0; /* 3. Spacing */
+    padding: 20px; /* 3. Spacing */
+    border: 1px solid #ddd; /* 4. Border */
+    border-radius: 5px; /* 4. Border */
+    background-color: #f9f9f9; /* 5. Background */
+    color: darkblue; /* 6. Text */
+}
+
+#table-of-contents h1 {
+    margin-top: 0; /* 3. Spacing */
+    color: darkblue; /* 6. Text */
+    font-size: 20px; /* 6. Text */
+}
+
+#table-of-contents ul {
+    padding-left: 20px; /* 3. Spacing */
+    list-style-type: none; /* 6. Text */
+}
+
+#table-of-contents a {
+    color: #0066cc; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+}
+
+#table-of-contents a:hover {
+    text-decoration: underline; /* 6. Text */
+}
+
+.no-bullets {
+    margin-left: 0; /* 3. Spacing */
+    padding-left: 0; /* 3. Spacing */
+    list-style-type: none; /* 6. Text */
+}
+
+/* --- SEPARATORS --- */
+hr {
+    display: block !important; /* 1. Layout */
+    height: 0 !important; /* 2. Size */
+    margin-top: 30px !important; /* 3. Spacing */
+    margin-bottom: 30px !important; /* 3. Spacing */
+    padding: 0 !important; /* 3. Spacing */
+    border: none !important; /* 4. Border */
+    border-top: 1px solid darkblue !important; /* 4. Border */
+}
+
+/* --- MEDIA ROW RESPONSIVE --- */
+.media-row {
+    display: flex !important; /* 1. Layout */
+    flex-direction: row !important; /* 1. Layout */
+    align-items: flex-end !important; /* 1. Layout */
+    width: 100% !important; /* 2. Size */
+    margin: 25px 0 !important; /* 3. Spacing */
+    gap: 30px !important; /* 3. Spacing */
+}
+
+.media-row .report-image-container {
+    display: block !important; /* 1. Layout */
+    flex: 1 !important; /* 1. Layout */
+}
+
+.media-row .report-image-container img {
+    display: block !important; /* 1. Layout */
+    max-width: 100% !important; /* 2. Size */
+    height: auto !important; /* 2. Size */
+    margin-top: auto !important; /* 3. Spacing */
+    margin-bottom: 8px !important; /* 3. Spacing */
+}
+
+.caption {
+    display: block !important; /* 1. Layout */
+    margin: 0 !important; /* 3. Spacing */
+    color: #555555 !important; /* 6. Text */
+    font-size: 0.9rem !important; /* 6. Text */
+}
+@media (max-width: 768px) {
+    .media-row {
+        flex-direction: column !important; /* 1. Layout */
+        gap: 25px !important; /* 3. Spacing */
+    }
+}
+
+/* --- TABLES --- */
+.summary-table {
+    border-collapse: collapse; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    max-width: 800px; /* 2. Size */
+    margin: 30px 0; /* 3. Spacing */
+    font-size: 0.95rem; /* 6. Text */
+}
+
+.summary-table th,
+.summary-table td {
+    padding: 12px 15px; /* 3. Spacing */
+    border-bottom: 1px solid #e0e0e0; /* 4. Border */
+}
+
+.summary-table th {
+    background-color: #f7f9fa; /* 5. Background */
+    color: #333333; /* 6. Text */
+    font-weight: 600; /* 6. Text */
+}
+
+.summary-table tbody tr:nth-of-type(even) {
+    background-color: #fcfdfe; /* 5. Background */
+}
+
+/* --- GLOBAL UTILITIES (TEXT & TRENDS) --- */
+.left-text,
+.text-left {
+    text-align: left !important; /* 6. Text */
+}
+
+.center-text {
+    text-align: center !important; /* 6. Text */
+}
+
+.text-right {
+    text-align: right; /* 6. Text */
+}
+
+.negative {
+    color: #c0392b; /* 6. Text */
+}
+
+.positive {
+    color: #27ae60; /* 6. Text */
+}
+
+/* --- FOOTER (Configured to Float Just Above the Bottom Floor) --- */
+footer {
+    display: flex; /* 1. Layout */
+    justify-content: center; /* 1. Layout */
+    align-items: center; /* 1. Layout */
+    flex-wrap: wrap; /* 1. Layout */
+    flex-shrink: 0; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    height: auto; /* 2. Size */
+    margin: auto 0 30px 0; /* 3. Spacing - Pushes to bottom, but holds a 30px cushion off the floor */
+    padding: 20px 0; /* 3. Spacing */
+    border-top: 2px solid darkblue; /* 4. Border */
+    background-color: rgba(255, 255, 255, 0.2); /* 5. Background */
+    color: white; /* 6. Text */
+    font-size: 0.9em; /* 6. Text */
+    text-align: center; /* 6. Text */
+}
+
+/* --- FINAL UPDATED RESPONSIVE MOBILE OVERRIDES --- */
+@media (max-width: 900px) {
+    .top-menu-bar ul {
+        flex-direction: column; /* 1. Layout */
+        margin-left: 0; /* 3. Spacing - Removes 250px gap on mobile devices for easy screen centering */
+        padding: 0; /* 3. Spacing */
+    }
+    .top-menu-bar a {
+        text-align: center; /* 6. Text */
+        border-bottom: 1px solid #333; /* 4. Border */
+    }
+    .layout-container {
+        flex-direction: column !important; /* 1. Layout - Re-stacks columns vertically on mobile viewports */
+    }
+    .left-menu, 
+    .right-menu {
+        width: 100%; /* 2. Size */
+        height: auto; /* 2. Size */
+        overflow: visible; /* 1. Layout */
+        border: none; /* 4. Border */
+    }
+}
+
+/* --- RETURN HOME BUTTON --- */
+.return-home-container {
+    display: flex; /* 1. Layout */
+    justify-content: flex-start; /* 1. Layout - Adjust to center or flex-end if desired */
+    width: 100%; /* 2. Size */
+    margin: 0 auto 30px auto; /* 3. Spacing - Bottom margin gives breathing room */
+}
+
+.btn-return-home {
+    display: inline-block; /* 1. Layout */
+    padding: 12px 20px; /* 3. Spacing */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 6px; /* 4. Border */
+    background-color: rgba(255, 243, 205, 0.8); /* 5. Background - Pulls global warm tone */
+    color: darkblue; /* 6. Text */
+    font-size: 1.05rem; /* 6. Text */
+    font-weight: bold; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    transition: background-color 0.2s ease, color 0.2s ease; /* 7. Effects */
+}
+
+.btn-return-home:hover {
+    background-color: black; /* 5. Background */
+    color: white; /* 6. Text */
+}
+.video-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+

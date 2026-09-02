@@ -1,0 +1,692 @@
+[FILE] -wait
+[DIR]  .git
+[FILE] .git/COMMIT_EDITMSG
+[FILE] .git/COMMIT_EDITMSG.txt
+[FILE] .git/FETCH_HEAD
+[FILE] .git/HEAD
+[FILE] .git/config
+[FILE] .git/description
+[DIR]  .git/hooks
+[FILE] .git/hooks/applypatch-msg.sample
+[FILE] .git/hooks/commit-msg.sample
+[FILE] .git/hooks/fsmonitor-watchman.sample
+[FILE] .git/hooks/post-update.sample
+[FILE] .git/hooks/pre-applypatch.sample
+[FILE] .git/hooks/pre-commit.sample
+[FILE] .git/hooks/pre-merge-commit.sample
+[FILE] .git/hooks/pre-push.sample
+[FILE] .git/hooks/pre-rebase.sample
+[FILE] .git/hooks/pre-receive.sample
+[FILE] .git/hooks/prepare-commit-msg.sample
+[FILE] .git/hooks/push-to-checkout.sample
+[FILE] .git/hooks/sendemail-validate.sample
+[FILE] .git/hooks/update.sample
+[FILE] .git/index
+[DIR]  .git/info
+[FILE] .git/info/exclude
+[FILE] .git/info/refs
+[DIR]  .git/logs
+[FILE] .git/logs/HEAD
+[DIR]  .git/logs/refs
+[DIR]  .git/logs/refs/heads
+[FILE] .git/logs/refs/heads/dev-vr1
+[FILE] .git/logs/refs/heads/main
+[DIR]  .git/logs/refs/remotes
+[DIR]  .git/logs/refs/remotes/origin
+[FILE] .git/logs/refs/remotes/origin/HEAD
+[FILE] .git/logs/refs/remotes/origin/dev-vr1
+[FILE] .git/logs/refs/remotes/origin/main
+[DIR]  .git/objects
+[DIR]  .git/objects/03
+[FILE] .git/objects/03/537a9ab7a316d21a8d62af83cfe9214682c1f9
+[DIR]  .git/objects/09
+[FILE] .git/objects/09/c15f602a2de2e95060bf664be29e5c34fe4bd6
+[DIR]  .git/objects/0d
+[FILE] .git/objects/0d/e4c27d274ecd76ae83c03d76a865839513d0a1
+[DIR]  .git/objects/23
+[FILE] .git/objects/23/8440dfebf95093f6874cda0f631e471755a151
+[DIR]  .git/objects/45
+[FILE] .git/objects/45/eb56df6a4956a4e392d2e17a572b35c93b6681
+[DIR]  .git/objects/4e
+[FILE] .git/objects/4e/4e7ed7b23fda1044ecdb10df8d1a844b331de7
+[DIR]  .git/objects/93
+[FILE] .git/objects/93/ff2ae8ad961974b2f64bc1f136498b8da956d2
+[DIR]  .git/objects/b5
+[FILE] .git/objects/b5/03496cd9abb8b65d51a777edd8b627eb1260d9
+[DIR]  .git/objects/b6
+[FILE] .git/objects/b6/49499908db374e9e13d76d505fa4f6b470c68f
+[DIR]  .git/objects/info
+[FILE] .git/objects/info/packs
+[DIR]  .git/objects/pack
+[FILE] .git/objects/pack/multi-pack-index
+[FILE] .git/objects/pack/pack-24ec10e3fab91ddf59fa31a84ab061f26c013644.idx
+[FILE] .git/objects/pack/pack-24ec10e3fab91ddf59fa31a84ab061f26c013644.pack
+[FILE] .git/objects/pack/pack-24ec10e3fab91ddf59fa31a84ab061f26c013644.rev
+[DIR]  .git/refs
+[DIR]  .git/refs/heads
+[FILE] .git/refs/heads/dev-vr1
+[FILE] .git/refs/heads/main
+[DIR]  .git/refs/remotes
+[DIR]  .git/refs/remotes/origin
+[FILE] .git/refs/remotes/origin/HEAD
+[FILE] .git/refs/remotes/origin/dev-vr1
+[FILE] .git/refs/remotes/origin/main
+[DIR]  .git/refs/tags
+[FILE] .phcode.json
+[DIR]  1.0 WIM - Service Definition
+[DIR]  1.0 WIM - Service Definition/0.0 WIMS - The Voice (WTV)
+[FILE] 1.0 WIM - Service Definition/0.0 WIMS - The Voice (WTV)/AAA - WIMS - Voice of the WIMS v1.0.docx
+[DIR]  1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AA0 - WIMS - Documentation Review & Catalogue.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAA - WIMS - Service Definition and Implementation Plan V1.3.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAB - WIMS Project - Office.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAC - WIMS - Directory Structure & Baseline Documentation.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAD - WIMS - Platform Definition Document.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAE - WIMS - Platform Implementation.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAF - WIMS - Weight Insight Monitoring Role.docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/AAG - WIMS Service Definition Maps (Baseline).docx
+[FILE] 1.0 WIM - Service Definition/0.1 WIMS - Service Defintion (WSD)/ZZZ - WIMS - Service Documentation.txt
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/AAA - WIMS Plan.txt
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/AAA - WIMS Project Planning Summary - Master Plan.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/AAB - WIMS - Master Plan - 2026-27.xlsx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/AAC - WIMS - Project Plan Vs Actuals.xlsx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/AAZ - WIMS - Discussion Project Planning Summary (Q1 Planning ).docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/July Plan Revised V1.1.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/PM01-Planning note for PM02.txt
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/Project Note - pw03.txt
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/WIMS - MP - Planning -Note 2.txt
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/WIMS - Master Plan - Working Pictures.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/WIMS - PO - Note 1.txt
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/WIMS Annual Project Plan 2026–2027 - Strategy.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/WIMS Master Plan allocating time left to project.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAA - Planning/WIMS Q1 Planning and Implementation Review.docx
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/AAE - WIMS - Weekly Review - W_C_ Wednesday 1 July 2026.docx
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW01
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW01/WIMS July 2026 — Week 1 Status Review.docx
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW02
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW02/Week 2 - Progress report.docx
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW03
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW03/PW03 Planning Summary (20–24 July 2026).docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW03/WIMS Weekly Status Review - PW02.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/PW03/ZZZ - WIMS - Template.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/WIMS Plan - PW03.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/WIMS Project Office.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM01 - July 2026/ZZZ - WIMS - Template.docx
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM02 - August 2026
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM03 - September 2026
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM04 - October 2026
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM05 - November 2026
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM06 - December 2026
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM07 - January 2027
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM08 - February 2027
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM09 - March 2027
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM10 - April 2027
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM11 - May 2027
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/PM12 - June 2027
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/AAB - Control/ZZZ - WIMS - Template.docx
+[DIR]  1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/ABC - Web Reporting
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/ABC - Web Reporting/WIMS - June 2026 - AWStats Metrics Guide.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/ABC - Web Reporting/WIMS Website Statistics Review - PW01.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/ABC - Web Reporting/WIMS Website Statistics Review - PW02.docx
+[FILE] 1.0 WIM - Service Definition/0.2 WIMS - Project Office (PO)/ABC - Web Reporting/WIMS Website Statistics Review - PW03.docx
+[DIR]  1.0 WIM - Service Definition/1.0 WIMS Book (WBK)
+[FILE] 1.0 WIM - Service Definition/1.0 WIMS Book (WBK)/5 Appendix 1 - WIMS Book Structure.docx
+[FILE] 1.0 WIM - Service Definition/1.0 WIMS Book (WBK)/AI Note 1.docx
+[FILE] 1.0 WIM - Service Definition/1.0 WIMS Book (WBK)/WIMS - Agreeing the WIMS Book Structure Report.docx
+[FILE] 1.0 WIM - Service Definition/1.0 WIMS Book (WBK)/WIMS - Book Structure.docx
+[DIR]  1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/AAA - WIMS - Platform Development Review V1.0.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/AAB - WIMS - Stable Educational Platform.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/AAC - WIMS - Website defintion and Menu structure.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/ZZZ - WIMS - HBB.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/ZZZ - WIMS - HBR.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/ZZZ - WIMS - Release Note V1.1.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/ZZZ - WIMS - WPT.docx
+[FILE] 1.0 WIM - Service Definition/2.0 WIMS Educational Platform (WEP)/ZZZ - WIMS Digest.docx
+[DIR]  1.0 WIM - Service Definition/20.0 WIMS - Archive
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/1.0 WIM - Structure & Mission.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/2.0 WIM - Development Plan.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/2.0 WIMS - Definition V1.1.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/3.0 WIM Scope Discussion.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/AAA -  WIMS - Structure & Mission - V1.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/AAB - WIMS - Service Definition and Implementation Plan V1.2.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/ALL WIM Service Defintion Docs.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/Thanks — I_ve reviewed the document.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/WIMS - Development Strategy.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/WIMS - Planning.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/WIMS - Project Charter.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/WIMS - Project Management Framework.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/WIMS - Roadmap discussion.docx
+[FILE] 1.0 WIM - Service Definition/20.0 WIMS - Archive/WIMS – Service Definition and Implementation Plan V1.docx
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAA - Foundation Content
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAA - Foundation Content/AAA - WIMS - Presentation-Fasting-Report-2026.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAA - Foundation Content/June 2026 Fasting Report (FR) V1.1.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAA - Foundation Content/Weight Management Data for January 2026 Fasting Report (C).xlsx
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAB - Platform Content
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAB - WIMS -Weight Insight Mentoring Service (WIMS).docx
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAC - WIMS - Marketing Content
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAC - WIMS - Marketing Content/WIM - Business Cards
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAC - WIMS - Marketing Content/WIM - Business Cards/WIM - Business Card Plus.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAC - WIMS - Marketing Content/WIM - Business Cards/WIM - Business Card Specification.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAC - WIMS - Marketing Content/WIM - Business Cards/WIM - Business Card.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAC - WIMS - Marketing Content/WIM - Business Cards/WIMS - T-Shirt_.docx
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAD - WIMS - Research Content
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/AAD - WIMS - Research Content/WIM - Potential Future Research Project.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/WIMS - Brouchure Resources.docx
+[DIR]  1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/First Post - Going for the One.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIM - Presentation-Fasting-Report-2026.txt
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIM - Website Landing Page Discussion Summary.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIMS - First blog Post.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIMS - Second blog Post.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIMS Content Strategy Summary.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIMS Editorial Workflow – Informal Blog Posts.docx
+[FILE] 1.0 WIM - Service Definition/3.0 WIMS Educational Content (WEC)/ZZZ - WIMS - Ideas Content/WIMS Poster.docx
+[DIR]  1.0 WIM - Service Definition/4.0 WIMS Practical Theory (WPT)
+[DIR]  1.0 WIM - Service Definition/4.0 WIMS Practical Theory (WPT)/WIM - Experiments
+[FILE] 1.0 WIM - Service Definition/4.0 WIMS Practical Theory (WPT)/WIM - Experiments/Sundays Discussion - Sunday 28th June 2026.docx
+[FILE] 1.0 WIM - Service Definition/4.0 WIMS Practical Theory (WPT)/WIM - Experiments/WIMS Planned Experiments (July 2026).docx
+[DIR]  1.0 WIM - Service Definition/5.0 WIMS Community Engagement (WEC)
+[DIR]  1.0 WIM - Service Definition/6.0 WIMS Communications (WCOM)
+[DIR]  1.0 WIM - Service Definition/7.0 WIMS - Architecture
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/AAD - WIMS - Candidate Requirement WIMS-RQ-012.docx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIM Support 2026 V1.0.xlsx
+[DIR]  1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS - Code
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS - Code/Create the Shared Fragment File.docx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS - Code/Menu structure for R1.docx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS - Code/Standarising CSS and HTML.docx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS - Code/WIMS Repo for Github.docx
+[DIR]  1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS- Support Tracker
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS- Support Tracker/WIM Support 2026 Nikki V1.0.xlsx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS- Support Tracker/WIM Support 2026 V1.0.xlsx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS- Support Tracker/WIM Support 2026 V1.1.xlsx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS- Support Tracker/WIM Support V1.docx
+[FILE] 1.0 WIM - Service Definition/7.0 WIMS - Architecture/WIMS- Support Tracker/WIMS - Support Guide for the WIM G Sheet for Weight Measurement and tracking.docx
+[DIR]  1.0 WIM - Service Definition/8.0 WIMS - Templates
+[FILE] 1.0 WIM - Service Definition/8.0 WIMS - Templates/ZZZ - WIMS - Document Template.docx
+[FILE] 1.0 WIM - Service Definition/8.0 WIMS - Templates/ZZZ - WIMS - Template.docx
+[FILE] 1.0 WIM - Service Definition/WIMS - Directory-Structure.txt
+[DIR]  1.0 WIM - Service Definition/ZZZ - Archive - OLD
+[DIR]  1.0 WIM - Service Definition/ZZZ - Archive - OLD/3.0 Risk Assessment
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/3.0 Risk Assessment/Weight Insight Mentor - Website June 2026 - SWOT.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/3.0 Risk Assessment/Weight Insight Mentor - Website June 2026.pdf
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/AAA - WIMS - Brochure.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/LinkedIn Profile & Informal SWOT Analysis.docx
+[DIR]  1.0 WIM - Service Definition/ZZZ - Archive - OLD/WIM - Project Reporting
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/WIM - Project Reporting/WIMS Project Baseline Report for June 2026.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/WIMS - Workstream Planning Principles.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/WIMS Development Session Report - July 2026 - Week 1.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/WIMS Master Schedule.jpg
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/WIMS Project Calendar.jpg
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/What is a Project Charter.docx
+[DIR]  1.0 WIM - Service Definition/ZZZ - Archive - OLD/Work To Completion - July 2026
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/Work To Completion - July 2026/WIMS - July Work Plan.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/Work To Completion - July 2026/Week 1 - Action (7–14 July).docx
+[DIR]  1.0 WIM - Service Definition/ZZZ - Archive - OLD/ZZZ - Archive
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/ZZZ - Archive/WIMS - Project Planning Session Summary.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/ZZZ - Archive/WIMS Master Project Plan.docx
+[FILE] 1.0 WIM - Service Definition/ZZZ - Archive - OLD/ZZZ - WIMS - Template.docx
+[DIR]  Dev
+[DIR]  Dev/Dev 1.01
+[FILE] Dev/Dev 1.01/.gitkeep
+[FILE] Dev/Dev 1.01/.htaccess
+[FILE] Dev/Dev 1.01/.phcode.json
+[FILE] Dev/Dev 1.01/Development Notes.md
+[FILE] Dev/Dev 1.01/Release note.md
+[FILE] Dev/Dev 1.01/about.php
+[FILE] Dev/Dev 1.01/contact.php
+[DIR]  Dev/Dev 1.01/css
+[FILE] Dev/Dev 1.01/css/my-styles.css
+[DIR]  Dev/Dev 1.01/images
+[FILE] Dev/Dev 1.01/images/Balance.png
+[FILE] Dev/Dev 1.01/images/Graham-Kisumu.jpg
+[FILE] Dev/Dev 1.01/images/ths-wim-logo-s.jpg
+[FILE] Dev/Dev 1.01/images/yin-yang.JPG
+[FILE] Dev/Dev 1.01/index.php
+[FILE] Dev/Dev 1.01/menu.php
+[FILE] Dev/Dev 1.01/my-footer.php
+[DIR]  Dev/Dev 1.01/reports
+[FILE] Dev/Dev 1.01/reports/June2026-Fasting-Report.pdf
+[FILE] Dev/Dev 1.01/reports/Read-me.txt
+[FILE] Dev/Dev 1.01/reports/WIM Support 2026 V1.0.xlsx
+[DIR]  Dev/Dev 1.02
+[FILE] Dev/Dev 1.02/.gitkeep
+[FILE] Dev/Dev 1.02/.htaccess
+[FILE] Dev/Dev 1.02/.phcode.json
+[FILE] Dev/Dev 1.02/Development Notes.md
+[FILE] Dev/Dev 1.02/June-2026-Fasting-Report.php
+[FILE] Dev/Dev 1.02/Release note.md
+[FILE] Dev/Dev 1.02/about.php
+[DIR]  Dev/Dev 1.02/articles
+[FILE] Dev/Dev 1.02/articles.php
+[FILE] Dev/Dev 1.02/contact.php
+[DIR]  Dev/Dev 1.02/css
+[FILE] Dev/Dev 1.02/css/my-styles.css
+[DIR]  Dev/Dev 1.02/images
+[FILE] Dev/Dev 1.02/images/Balance.png
+[FILE] Dev/Dev 1.02/images/Cartoon Graham at MDL.png
+[FILE] Dev/Dev 1.02/images/Graham-Kisumu.jpg
+[FILE] Dev/Dev 1.02/images/figure1.png
+[FILE] Dev/Dev 1.02/images/figure2.PNG
+[FILE] Dev/Dev 1.02/images/figure3.PNG
+[FILE] Dev/Dev 1.02/images/figure4.png
+[FILE] Dev/Dev 1.02/images/table1.JPG
+[FILE] Dev/Dev 1.02/images/table1.png
+[FILE] Dev/Dev 1.02/images/table2.PNG
+[FILE] Dev/Dev 1.02/images/table3.PNG
+[FILE] Dev/Dev 1.02/images/table4.PNG
+[FILE] Dev/Dev 1.02/images/ths-wim-logo-s.jpg
+[FILE] Dev/Dev 1.02/images/yin-yang.JPG
+[DIR]  Dev/Dev 1.02/includes
+[FILE] Dev/Dev 1.02/includes/my-footer.php
+[FILE] Dev/Dev 1.02/includes/my-header.php
+[FILE] Dev/Dev 1.02/includes/my-menu.php
+[FILE] Dev/Dev 1.02/index.php
+[DIR]  Dev/Dev 1.02/reports
+[FILE] Dev/Dev 1.02/reports/June2026-Fasting-Report.pdf
+[FILE] Dev/Dev 1.02/reports/Read-me.txt
+[FILE] Dev/Dev 1.02/reports/WIM Support 2026 V1.0.xlsx
+[DIR]  Dev/Dev 1.10
+[FILE] Dev/Dev 1.10/.phcode.json
+[FILE] Dev/Dev 1.10/WP0-index.php
+[FILE] Dev/Dev 1.10/WP1-Test.php
+[FILE] Dev/Dev 1.10/WP2-about-Graham.php
+[FILE] Dev/Dev 1.10/WP3-about-WIMS.php
+[FILE] Dev/Dev 1.10/WP4-contact.php
+[FILE] Dev/Dev 1.10/WP5-ReleaseNote.php
+[FILE] Dev/Dev 1.10/WP6-WIMS Digest.php
+[FILE] Dev/Dev 1.10/WP7-WIMS HBB.php
+[FILE] Dev/Dev 1.10/WP8-WIMS HBR.php
+[FILE] Dev/Dev 1.10/WP9-WIMS WPT.php
+[FILE] Dev/Dev 1.10/WPL1-June-2026-Fasting-Report.php
+[FILE] Dev/Dev 1.10/WPL2-Download.php
+[FILE] Dev/Dev 1.10/WPL3-June Fasting Yt.php
+[FILE] Dev/Dev 1.10/WPS1-menu.php
+[FILE] Dev/Dev 1.10/WPZ1-my-footer.php
+[DIR]  Dev/Dev 1.10/css
+[FILE] Dev/Dev 1.10/css/my-styles.css
+[FILE] Dev/Dev 1.10/css/my-styles1.css
+[FILE] Dev/Dev 1.10/css/my-styles2.css
+[FILE] Dev/Dev 1.10/css/my-yt-styles.css
+[DIR]  Dev/Dev 1.10/images
+[FILE] Dev/Dev 1.10/images/Balance.png
+[FILE] Dev/Dev 1.10/images/Cartoon Graham at MDL.png
+[FILE] Dev/Dev 1.10/images/Graham-Kisumu.jpg
+[FILE] Dev/Dev 1.10/images/HBB.png
+[FILE] Dev/Dev 1.10/images/HBR.png
+[FILE] Dev/Dev 1.10/images/P0.png
+[FILE] Dev/Dev 1.10/images/P1.png
+[FILE] Dev/Dev 1.10/images/P2.png
+[FILE] Dev/Dev 1.10/images/P3.png
+[FILE] Dev/Dev 1.10/images/P4.png
+[FILE] Dev/Dev 1.10/images/P5.png
+[FILE] Dev/Dev 1.10/images/WIMS - WIMS Digest.png
+[FILE] Dev/Dev 1.10/images/WPT.png
+[FILE] Dev/Dev 1.10/images/figure1.png
+[FILE] Dev/Dev 1.10/images/figure2.png
+[FILE] Dev/Dev 1.10/images/figure3.png
+[FILE] Dev/Dev 1.10/images/figure4.png
+[FILE] Dev/Dev 1.10/images/release-note-v1-1.PNG
+[FILE] Dev/Dev 1.10/images/table1.jpg
+[FILE] Dev/Dev 1.10/images/table1.png
+[FILE] Dev/Dev 1.10/images/table2.png
+[FILE] Dev/Dev 1.10/images/table3.png
+[FILE] Dev/Dev 1.10/images/table4.png
+[FILE] Dev/Dev 1.10/images/ths-wim-logo-s.jpg
+[FILE] Dev/Dev 1.10/images/yin-yang.png
+[DIR]  Dev/Dev 1.10/includes
+[FILE] Dev/Dev 1.10/includes/home-button.php
+[FILE] Dev/Dev 1.10/includes/left-sidebar.php
+[FILE] Dev/Dev 1.10/includes/right-sidebar.php
+[FILE] Dev/Dev 1.10/includes/top-bar.php
+[FILE] Dev/Dev 1.10/index.php
+[DIR]  Dev/Dev 1.10/reports
+[FILE] Dev/Dev 1.10/reports/June2026-Fasting-Report.pdf
+[FILE] Dev/Dev 1.10/reports/Read-me.txt
+[FILE] Dev/Dev 1.10/reports/WIM Support 2026 V1.0.xlsx
+[DIR]  Doc
+[FILE] Doc/.gitkeep
+[DIR]  Rel
+[FILE] Rel/.gitkeep
+[DIR]  Rel/VR-1-0
+[FILE] Rel/VR-1-0/.gitkeep
+[FILE] Rel/VR-1-0/.htaccess
+[FILE] Rel/VR-1-0/Release-1-0.md
+[DIR]  Rel/VR-1-0/css
+[FILE] Rel/VR-1-0/css/my-styles.css
+[FILE] Rel/VR-1-0/css-standard.md
+[DIR]  Rel/VR-1-0/images
+[FILE] Rel/VR-1-0/images/Balance.png
+[FILE] Rel/VR-1-0/images/Business Poster.png
+[FILE] Rel/VR-1-0/images/Graham-Kisumu.jpg
+[FILE] Rel/VR-1-0/images/ths-wim-logo-s.jpg
+[FILE] Rel/VR-1-0/images/yin-yang.JPG
+[FILE] Rel/VR-1-0/index.html
+[DIR]  Rel/VR-1-0/reports
+[FILE] Rel/VR-1-0/reports/June2026-Fasting-Report.pdf
+[FILE] Rel/VR-1-0/reports/Read-me.txt
+[FILE] Rel/VR-1-0/reports/WIM Support 2026 V1.0.xlsx
+[DIR]  Rel/VR1
+[FILE] Rel/VR1/.htaccess
+[FILE] Rel/VR1/Release note.md
+[DIR]  Rel/VR1/css
+[FILE] Rel/VR1/css/my-styles.css
+[DIR]  Rel/VR1/images
+[FILE] Rel/VR1/images/Balance.png
+[FILE] Rel/VR1/images/Business Poster.png
+[FILE] Rel/VR1/images/Graham-Kisumu.jpg
+[FILE] Rel/VR1/images/ths-wim-logo-s.jpg
+[FILE] Rel/VR1/images/yin-yang.JPG
+[FILE] Rel/VR1/index.html
+[DIR]  Rel/VR1/reports
+[FILE] Rel/VR1/reports/June2026-Fasting-Report.pdf
+[DIR]  Sandbox
+[FILE] Sandbox/.phcode.json
+[DIR]  Sandbox/Example 1
+[FILE] Sandbox/Example 1/June-2026-Fasting-Report.php
+[FILE] Sandbox/Example 1/about.php
+[FILE] Sandbox/Example 1/contact.php
+[DIR]  Sandbox/Example 1/css
+[FILE] Sandbox/Example 1/css/my-styles.css
+[DIR]  Sandbox/Example 1/images
+[FILE] Sandbox/Example 1/images/Balance.png
+[FILE] Sandbox/Example 1/images/Cartoon Graham at MDL.png
+[FILE] Sandbox/Example 1/images/Graham-Kisumu.jpg
+[FILE] Sandbox/Example 1/images/figure1.png
+[FILE] Sandbox/Example 1/images/figure2.PNG
+[FILE] Sandbox/Example 1/images/figure3.PNG
+[FILE] Sandbox/Example 1/images/figure4.png
+[FILE] Sandbox/Example 1/images/table1.JPG
+[FILE] Sandbox/Example 1/images/table1.png
+[FILE] Sandbox/Example 1/images/table2.PNG
+[FILE] Sandbox/Example 1/images/table3.PNG
+[FILE] Sandbox/Example 1/images/table4.PNG
+[FILE] Sandbox/Example 1/images/ths-wim-logo-s.jpg
+[FILE] Sandbox/Example 1/images/yin-yang.JPG
+[FILE] Sandbox/Example 1/index.php
+[FILE] Sandbox/Example 1/menu.php
+[FILE] Sandbox/Example 1/my-footer.php
+[DIR]  Sandbox/Example 2
+[FILE] Sandbox/Example 2/.phcode.json
+[FILE] Sandbox/Example 2/Test.php
+[FILE] Sandbox/Example 2/aa-my-menu.php
+[FILE] Sandbox/Example 2/about-wims.php
+[FILE] Sandbox/Example 2/adapt.php
+[FILE] Sandbox/Example 2/articles-media.php
+[FILE] Sandbox/Example 2/articles.php
+[FILE] Sandbox/Example 2/contact.php
+[DIR]  Sandbox/Example 2/css
+[FILE] Sandbox/Example 2/css/my-styles.css
+[FILE] Sandbox/Example 2/downloads.php
+[FILE] Sandbox/Example 2/environment-lifestyle.php
+[FILE] Sandbox/Example 2/finding-patterns.php
+[FILE] Sandbox/Example 2/getting-started.php
+[FILE] Sandbox/Example 2/habits-behaviour.php
+[FILE] Sandbox/Example 2/index.php
+[FILE] Sandbox/Example 2/know-thyself.php
+[FILE] Sandbox/Example 2/learn-patterns.php
+[FILE] Sandbox/Example 2/learn.php
+[FILE] Sandbox/Example 2/maintaing-progress.php
+[FILE] Sandbox/Example 2/maintaining -progress.php
+[FILE] Sandbox/Example 2/making-changes.php
+[FILE] Sandbox/Example 2/measure.php
+[FILE] Sandbox/Example 2/measuring-commitment.php
+[FILE] Sandbox/Example 2/mentoring.php
+[FILE] Sandbox/Example 2/personal-experiments.php
+[FILE] Sandbox/Example 2/philiosophy.php
+[FILE] Sandbox/Example 2/release-notes.php
+[FILE] Sandbox/Example 2/reports.php
+[FILE] Sandbox/Example 2/resources.php
+[FILE] Sandbox/Example 2/reviewing-patterns.php
+[FILE] Sandbox/Example 2/reviewing-results.php
+[FILE] Sandbox/Example 2/sustainable-habits.php
+[FILE] Sandbox/Example 2/templates.php
+[FILE] Sandbox/Example 2/tools.php
+[FILE] Sandbox/Example 2/understanding-data.php
+[FILE] Sandbox/Example 2/understanding-yourself.php
+[FILE] Sandbox/Example 2/updates.php
+[FILE] Sandbox/Example 2/videos.php
+[FILE] Sandbox/Example 2/vision-purpose.php
+[FILE] Sandbox/Example 2/what-is-wims.php
+[FILE] Sandbox/Example 2/why-measure.php
+[FILE] Sandbox/Example 2/wim.php
+[FILE] Sandbox/Example 2/wims-know-thyself.php
+[FILE] Sandbox/Example 2/wims-tracker.php
+[DIR]  Sandbox/Example 3
+[FILE] Sandbox/Example 3/Index.html
+[DIR]  Sandbox/Example 3/css
+[FILE] Sandbox/Example 3/css/my-styles.css
+[DIR]  Sandbox/Example 3/images
+[FILE] Sandbox/Example 3/images/Balance.png
+[FILE] Sandbox/Example 3/images/Cartoon Graham at MDL.png
+[FILE] Sandbox/Example 3/images/Graham-Kisumu.jpg
+[FILE] Sandbox/Example 3/images/figure1.png
+[FILE] Sandbox/Example 3/images/figure2.PNG
+[FILE] Sandbox/Example 3/images/figure3.PNG
+[FILE] Sandbox/Example 3/images/figure4.png
+[FILE] Sandbox/Example 3/images/table1.JPG
+[FILE] Sandbox/Example 3/images/table1.png
+[FILE] Sandbox/Example 3/images/table2.PNG
+[FILE] Sandbox/Example 3/images/table3.PNG
+[FILE] Sandbox/Example 3/images/table4.PNG
+[FILE] Sandbox/Example 3/images/ths-wim-logo-s.jpg
+[FILE] Sandbox/Example 3/images/yin-yang.JPG
+[DIR]  Sandbox/Example 4
+[FILE] Sandbox/Example 4/.phcode.json
+[FILE] Sandbox/Example 4/WP0-index.php
+[FILE] Sandbox/Example 4/WP1-Test.php
+[FILE] Sandbox/Example 4/WP2-about-Graham.php
+[FILE] Sandbox/Example 4/WP3-about-WIMS.php
+[FILE] Sandbox/Example 4/WP4-contact.php
+[FILE] Sandbox/Example 4/WP5-ReleaseNote.php
+[FILE] Sandbox/Example 4/WP6-WIMS Digest.php
+[FILE] Sandbox/Example 4/WP7-WIMS HBB.php
+[FILE] Sandbox/Example 4/WP8-WIMS HBR.php
+[FILE] Sandbox/Example 4/WP9-WIMS WPT.php
+[FILE] Sandbox/Example 4/WPL1-June-2026-Fasting-Report.php
+[FILE] Sandbox/Example 4/WPL2-Download.php
+[FILE] Sandbox/Example 4/WPL3-June Fasting Yt.php
+[FILE] Sandbox/Example 4/WPS1-menu.php
+[FILE] Sandbox/Example 4/WPZ1-my-footer.php
+[DIR]  Sandbox/Example 4/css
+[FILE] Sandbox/Example 4/css/my-styles.css
+[FILE] Sandbox/Example 4/css/my-styles1.css
+[FILE] Sandbox/Example 4/css/my-styles2.css
+[FILE] Sandbox/Example 4/css/my-yt-styles.css
+[DIR]  Sandbox/Example 4/images
+[FILE] Sandbox/Example 4/images/Balance.png
+[FILE] Sandbox/Example 4/images/Cartoon Graham at MDL.png
+[FILE] Sandbox/Example 4/images/Graham-Kisumu.jpg
+[FILE] Sandbox/Example 4/images/HBB.png
+[FILE] Sandbox/Example 4/images/HBR.png
+[FILE] Sandbox/Example 4/images/P0.png
+[FILE] Sandbox/Example 4/images/P1.png
+[FILE] Sandbox/Example 4/images/P2.png
+[FILE] Sandbox/Example 4/images/P3.png
+[FILE] Sandbox/Example 4/images/P4.png
+[FILE] Sandbox/Example 4/images/P5.png
+[FILE] Sandbox/Example 4/images/WIMS - WIMS Digest.png
+[FILE] Sandbox/Example 4/images/WPT.png
+[FILE] Sandbox/Example 4/images/figure1.png
+[FILE] Sandbox/Example 4/images/figure2.png
+[FILE] Sandbox/Example 4/images/figure3.png
+[FILE] Sandbox/Example 4/images/figure4.png
+[FILE] Sandbox/Example 4/images/release-note-v1-1.PNG
+[FILE] Sandbox/Example 4/images/table1.jpg
+[FILE] Sandbox/Example 4/images/table1.png
+[FILE] Sandbox/Example 4/images/table2.png
+[FILE] Sandbox/Example 4/images/table3.png
+[FILE] Sandbox/Example 4/images/table4.png
+[FILE] Sandbox/Example 4/images/ths-wim-logo-s.jpg
+[FILE] Sandbox/Example 4/images/yin-yang.png
+[DIR]  Sandbox/Example 4/includes
+[FILE] Sandbox/Example 4/includes/home-button.php
+[FILE] Sandbox/Example 4/includes/left-sidebar.php
+[FILE] Sandbox/Example 4/includes/right-sidebar.php
+[FILE] Sandbox/Example 4/includes/top-bar.php
+[DIR]  Sandbox/dynamic-posting
+[FILE] Sandbox/dynamic-posting/Index.php
+[FILE] Sandbox/dynamic-posting/posts.txt
+[FILE] Sandbox/readme.txt
+[FILE] Sandbox/return-btn.php
+[DIR]  Test
+[FILE] Test/.gitkeep
+[FILE] Test/.phcode.json
+[FILE] Test/WP0-index.php
+[FILE] Test/WP1-Test.php
+[FILE] Test/WP2-about-Graham.php
+[FILE] Test/WP3-about-WIMS.php
+[FILE] Test/WP4-contact.php
+[FILE] Test/WP5-ReleaseNote.php
+[FILE] Test/WP6-WIMS Digest.php
+[FILE] Test/WP7-WIMS HBB.php
+[FILE] Test/WP8-WIMS HBR.php
+[FILE] Test/WP9-WIMS WPT.php
+[FILE] Test/WPL1-June-2026-Fasting-Report.php
+[FILE] Test/WPL2-Download.php
+[FILE] Test/WPL3-June Fasting Yt.php
+[FILE] Test/WPS1-menu.php
+[FILE] Test/WPZ1-my-footer.php
+[DIR]  Test/css
+[FILE] Test/css/my-styles.css
+[FILE] Test/css/my-styles1.css
+[FILE] Test/css/my-styles2.css
+[FILE] Test/css/my-yt-styles.css
+[DIR]  Test/images
+[FILE] Test/images/Balance.png
+[FILE] Test/images/Cartoon Graham at MDL.png
+[FILE] Test/images/Graham-Kisumu.jpg
+[FILE] Test/images/HBB.png
+[FILE] Test/images/HBR.png
+[FILE] Test/images/P0.png
+[FILE] Test/images/P1.png
+[FILE] Test/images/P2.png
+[FILE] Test/images/P3.png
+[FILE] Test/images/P4.png
+[FILE] Test/images/P5.png
+[FILE] Test/images/WIMS - WIMS Digest.png
+[FILE] Test/images/WPT.png
+[FILE] Test/images/figure1.png
+[FILE] Test/images/figure2.png
+[FILE] Test/images/figure3.png
+[FILE] Test/images/figure4.png
+[FILE] Test/images/release-note-v1-1.PNG
+[FILE] Test/images/table1.jpg
+[FILE] Test/images/table1.png
+[FILE] Test/images/table2.png
+[FILE] Test/images/table3.png
+[FILE] Test/images/table4.png
+[FILE] Test/images/ths-wim-logo-s.jpg
+[FILE] Test/images/yin-yang.png
+[DIR]  Test/includes
+[FILE] Test/includes/home-button.php
+[FILE] Test/includes/left-sidebar.php
+[FILE] Test/includes/right-sidebar.php
+[FILE] Test/includes/top-bar.php
+[FILE] Test/index.php
+[DIR]  Test/reports
+[FILE] Test/reports/June2026-Fasting-Report.pdf
+[FILE] Test/reports/Read-me.txt
+[FILE] Test/reports/WIM Support 2026 V1.0.xlsx
+[FILE] index-working.php
+[FILE] index.php
+[DIR]  vh
+[DIR]  vh/1.0 WIM - Servce Documentation
+[FILE] vh/1.0 WIM - Servce Documentation/1.0 WIMS - Structure & Mission - V1.docx
+[FILE] vh/1.0 WIM - Servce Documentation/2.0 WIMS - Definition v1.1.pdf
+[FILE] vh/1.0 WIM - Servce Documentation/2.0 WIMS - Definition.docx
+[DIR]  vh/1.0 WIM - Servce Documentation/Archive
+[FILE] vh/1.0 WIM - Servce Documentation/Archive/1.0 WIM - Structure & Mission.docx
+[FILE] vh/1.0 WIM - Servce Documentation/Archive/2.0 WIM - Development Plan.docx
+[FILE] vh/1.0 WIM - Servce Documentation/Archive/3.0 WIM Scope Discussion.docx
+[FILE] vh/1.0 WIM - Servce Documentation/Archive/ALL WIM Service Defintion Docs.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Book Structure.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Development Strategy.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Planning.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Project Charter.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Project Management Framework.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Roadmap discussion.docx
+[FILE] vh/1.0 WIM - Servce Documentation/WIMS - Weight Insight Monitoring Role.docx
+[DIR]  vh/Dev
+[FILE] vh/Dev/.gitkeep
+[FILE] vh/Dev/.htaccess
+[FILE] vh/Dev/.phcode.json
+[FILE] vh/Dev/Development Notes.md
+[FILE] vh/Dev/Release note.md
+[FILE] vh/Dev/about.php
+[FILE] vh/Dev/contact.php
+[DIR]  vh/Dev/css
+[FILE] vh/Dev/css/my-styles.css
+[DIR]  vh/Dev/images
+[FILE] vh/Dev/images/Balance.png
+[FILE] vh/Dev/images/Business Poster.png
+[FILE] vh/Dev/images/Graham-Kisumu.jpg
+[FILE] vh/Dev/images/ths-wim-logo-s.jpg
+[FILE] vh/Dev/images/yin-yang.JPG
+[FILE] vh/Dev/index.php
+[FILE] vh/Dev/menu.php
+[FILE] vh/Dev/my-footer.php
+[DIR]  vh/Dev/reports
+[FILE] vh/Dev/reports/June2026-Fasting-Report.pdf
+[FILE] vh/Dev/reports/Read-me.txt
+[FILE] vh/Dev/reports/WIM Support 2026 V1.0.xlsx
+[DIR]  vh/Doc
+[FILE] vh/Doc/.gitkeep
+[DIR]  vh/Rel
+[FILE] vh/Rel/.gitkeep
+[DIR]  vh/Rel/VR-1-0
+[FILE] vh/Rel/VR-1-0/.gitkeep
+[FILE] vh/Rel/VR-1-0/.htaccess
+[FILE] vh/Rel/VR-1-0/Release-1-0.md
+[DIR]  vh/Rel/VR-1-0/css
+[FILE] vh/Rel/VR-1-0/css/my-styles.css
+[FILE] vh/Rel/VR-1-0/css-standard.md
+[DIR]  vh/Rel/VR-1-0/images
+[FILE] vh/Rel/VR-1-0/images/Balance.png
+[FILE] vh/Rel/VR-1-0/images/Business Poster.png
+[FILE] vh/Rel/VR-1-0/images/Graham-Kisumu.jpg
+[FILE] vh/Rel/VR-1-0/images/ths-wim-logo-s.jpg
+[FILE] vh/Rel/VR-1-0/images/yin-yang.JPG
+[FILE] vh/Rel/VR-1-0/index.html
+[DIR]  vh/Rel/VR-1-0/reports
+[FILE] vh/Rel/VR-1-0/reports/June2026-Fasting-Report.pdf
+[FILE] vh/Rel/VR-1-0/reports/Read-me.txt
+[FILE] vh/Rel/VR-1-0/reports/WIM Support 2026 V1.0.xlsx
+[DIR]  vh/Rel/VR1
+[FILE] vh/Rel/VR1/.htaccess
+[FILE] vh/Rel/VR1/Release note.md
+[DIR]  vh/Rel/VR1/css
+[FILE] vh/Rel/VR1/css/my-styles.css
+[DIR]  vh/Rel/VR1/images
+[FILE] vh/Rel/VR1/images/Balance.png
+[FILE] vh/Rel/VR1/images/Business Poster.png
+[FILE] vh/Rel/VR1/images/Graham-Kisumu.jpg
+[FILE] vh/Rel/VR1/images/ths-wim-logo-s.jpg
+[FILE] vh/Rel/VR1/images/yin-yang.JPG
+[FILE] vh/Rel/VR1/index.html
+[DIR]  vh/Rel/VR1/reports
+[FILE] vh/Rel/VR1/reports/June2026-Fasting-Report.pdf
+[DIR]  vh/Test
+[FILE] vh/Test/.gitkeep
+[DIR]  vh/Test/Test.theheapstack.com
+[FILE] vh/Test/Test.theheapstack.com/.gitkeep
+[FILE] vh/Test/Test.theheapstack.com/.htaccess
+[DIR]  vh/Test/Test.theheapstack.com/css
+[FILE] vh/Test/Test.theheapstack.com/css/my-styles.css
+[FILE] vh/Test/Test.theheapstack.com/css-standard.md
+[DIR]  vh/Test/Test.theheapstack.com/images
+[FILE] vh/Test/Test.theheapstack.com/images/Balance.png
+[FILE] vh/Test/Test.theheapstack.com/images/Business Poster.png
+[FILE] vh/Test/Test.theheapstack.com/images/Graham-Kisumu.jpg
+[FILE] vh/Test/Test.theheapstack.com/images/ths-wim-logo-s.jpg
+[FILE] vh/Test/Test.theheapstack.com/images/yin-yang.JPG
+[FILE] vh/Test/Test.theheapstack.com/index.html
+[DIR]  vh/Test/Test.theheapstack.com/reports
+[FILE] vh/Test/Test.theheapstack.com/reports/June2026-Fasting-Report.pdf
+[FILE] vh/Test/Test.theheapstack.com/reports/Read-me.txt
+[FILE] vh/Test/Test.theheapstack.com/reports/WIM Support 2026 V1.0.xlsx

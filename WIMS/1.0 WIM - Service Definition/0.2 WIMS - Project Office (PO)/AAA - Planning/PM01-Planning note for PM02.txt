@@ -1,0 +1,5 @@
+Deferred to PM02 (August 2026)
+
+Develop the WIMS Work Breakdown Structure (WBS)
+using the agreed baseline directory structure and
+the first month of implementation experience.

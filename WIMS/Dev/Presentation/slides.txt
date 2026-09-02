@@ -1,0 +1,355 @@
+[slide]
+type=title 
+heading=June Fasting Report 2026 
+image=images/slide-01-mdl.png
+
+[slide] 
+type=title
+eyebrow=WIMS • PERSONAL CASE STUDY 
+title=June 2026 Fasting Report 
+subtitle=Weight Management as Measurement and a Feedback System
+description=A Reflective, Data-Led Personal Case Study 
+text=September 2025 – January 2026 
+author=Graham Heap 
+
+[slide] 
+type=warning
+eyebrow=HEALTH WARNING 
+title=Personal Case Study
+subtitle = Not Medical Advice 
+description=Personal experience using fasting and gentle exercise to manage weight.
+text=Personal data and reflection. 
+
+
+Not a formal scientific study. 
+
+Not medical advice. 
+
+Not general advice. 
+note=The presentation describes what happened and what was learnt.
+
+It does not provide a recommendation for others to follow. 
+
+[slide] 
+type=list
+eyebrow=WHY THIS STUDY 
+title=Why Was This Study Undertaken?
+
+items=
+To observe what happened when fasting was used to manage weight. 
+To record weight consistently. 
+To look for patterns rather than rely on individual readings. 
+To reflect on what the measurements might mean. 
+
+note=The starting point was observation, measurement and curiosity. 
+
+[slide] 
+type=list
+eyebrow=BACKGROUND 
+subtitle=Weight Management Is Not Simply a Nutritional Problem 
+
+items=
+Quality and quantity of food.
+Exercise.
+Quality of life.
+Personal reasons such as health and confidence. 
+
+note=Sustainable change tends to emerge through small,
+repeatable actions rather than willpower alone.
+
+[slide] 
+type=list
+eyebrow=METHOD & CONSTRAINTS 
+subtitle=How Was the Experiment Recorded? 
+items=Weight recorded daily in a spreadsheet.
+Weekly averages calculated.
+Compared with weekly targets.
+Morning/rested weight used as the first measurement.
+Weekly trends considered more useful than individual fluctuations.
+Fasting varied between approximately 1 and 4 days per week. 
+
+scope=Blood sugar, hormones, calorie intake, controlled
+exercise, sleep, stress and life events were not measured. 
+
+[slide]
+type=compare
+eyebrow=REFLECTION
+
+column1=What?
+items1=
+Describe the event.
+What happened?
+What did you observe?
+What did you measure?
+
+column2=So What?
+items2=
+What is the significance to you?
+What does the observation tell you?
+What have you learned?
+Why does it matter?
+
+column3=What Next?
+items3=
+What action will you take?
+What might you change?
+What will you do differently?
+How will you measure the result?
+
+[slide] 
+type=table
+eyebrow=SEPTEMBER 2025 
+row=01/09\n4\n16.51 st 
+row=08/09\n3\n16.22 st
+row=15/09\n4\n15.90 st 
+row=22/09\n3\n15.59 st 
+row=29/09\n2\n16.04 st
+note=Overall downward trend, with a rebound in Week 5. 
+closing=Strong initial reduction with normal weekly variability. 
+
+[slide] eyebrow=OCTOBER 2025 row=06/10\n1\n15.84 st row=13/10\n2\n15.55 st
+row=20/10\n3\n15.26 st row=27/10\n4\n14.97 st note=Weight decreased steadily
+while fasting frequency increased. closing=Sustained downward trend with
+consistent measurement. type=table
+
+[slide] 
+type=table
+eyebrow=NOVEMBER 2025 
+row=03/11\n1\n15.25 st 
+row=10/11\n2\n15.14 st
+row=17/11\n3\n14.96 st 
+row=24/11\n4\n14.78 st 
+note=Weight continued falling, but more slowly than September and October despite increasing fasting
+frequency. 
+closing=Continued reduction approaching approximately 15
+stone. 
+
+[slide] 
+type=break
+eyebrow=DECEMBER 2025 
+title=The Experiment Paused For Christmas 
+items=
+No weekly data.
+Christmas — no measurement + no fasting.
+A real-life interruption. 
+
+note=The break provides a natural interruption in the observation period. 
+
+[slide] 
+type=table
+eyebrow=JANUARY 2026 
+row=05/01\n3\n15.26 st 
+row=12/01\n3\n15.18 st
+row=19/01\n3\n15.00 st 
+row=26/01\n0\n15.50 st 
+note=Weight fell when fasting resumed and increased again when fasting stopped. 
+closing=Overall stabilisation around 15 stone. 
+
+[slide] 
+type=table
+eyebrow=DATA SUMMARY 
+title=The Full Data Set
+[slide]
+type=table
+eyebrow=SEPTEMBER–NOVEMBER 2025
+row=01/09\n4\n16.51 st
+row=08/09\n3\n16.22 st
+row=15/09\n4\n15.90 st
+row=22/09\n3\n15.59 st
+row=29/09\n2\n16.04 st
+row=06/10\n1\n15.84 st
+row=13/10\n2\n15.55 st
+row=20/10\n3\n15.26 st
+row=27/10\n4\n14.97 st
+row=03/11\n1\n15.25 st
+row=10/11\n2\n15.14 st
+row=17/11\n3\n14.96 st
+row=24/11\n4\n14.78 st
+note=Weight fell overall as fasting resumed, despite some weekly fluctuations.
+closing=Overall reduction from 16.51 to 14.78 stone.
+
+items=Fasting days.
+Average weight.
+Weekly change in stone.
+Weekly change in pounds.
+
+note=
+The average-weight trend and the start-to-end weekly change are related, but they are not the same measurement.
+
+[slide] 
+type=graph
+eyebrow=DATA SUMMARY 
+title=The Overall Picture 
+items=
+Major downward movement.
+Normal short-term fluctuations.
+Slower reduction in November.
+Christmas interruption.
+January recovery after measurement and fasting resumed.
+Stabilisation around approximately 15 stone.
+image=images/figure5.png
+
+[slide] 
+type=analysis
+eyebrow=SO WHAT? 
+title=Analysis & Reflection 
+items=Fasting appeared effective at removing recently gained weight.\nWeight repeatedly
+returned toward approximately 15 stone.\nShorter repeated fasts appeared
+sufficient.\nFasting and gentle activity appeared complementary.\nFeasting
+supported satiety and sustainability.\nConsistent measurement reduced
+emotional disappointment from daily fluctuations.\nWeekly trends were
+more informative than individual readings. 
+note=Measurement + feedback + fasting + gentle exercise appeared more important than fasting alone.
+
+[slide] 
+type=feedback
+eyebrow=MEASUREMENT 
+title=Measurement as a Feedback System
+note=The numbers become a signal rather than a series of individual
+successes or failures. 
+flow=Daily weight → Weekly average → Weekly change → Behaviour → Adjustment 
+closing=The weight-management problem begins to look more like a feedback system than a diet. 
+
+ 
+[slide]
+type=adjustment
+eyebrow=ADJUSTMENT
+title=From Dieting to Adjustment
+image=images/light-switch.png
+image=images/dimmer-switch.png
+note=The aim is not perfection but small adjustments over time.
+
+[slide] 
+type=activity
+eyebrow=ACTIVITY 
+title=The Role of Activity During Fasting
+items=Walking.\nHousework.\nHobbies.\nSustained low-intensity movement.
+note=Earlier, approximately two hours of low-intensity activity before
+breaking a fast appeared to have a noticeable effect. 
+caution=Reduced activity during November illness may have meant less glycogen depletion.
+This is a hypothesis, not a scientifically supported conclusion.
+
+[slide] 
+type=compare
+eyebrow=BEHAVIOUR & BIOLOGY 
+title=Why Might Fasting Work?
+column1=BEHAVIOUR 
+items1=
+Fewer meals.
+Fewer decisions.
+Simple structure.
+Easier than constantly managing portions. 
+column2=BIOLOGY
+items2=
+Blood sugar falls.
+Glycogen stores reduce.
+Stored fat may increasingly be used. 
+note= The report’s key observation: behaviour and biology appear to matter together. 
+
+[slide]
+type=process
+eyebrow=POSSIBLE EXPLANATION
+title=
+Why Fasting Is Considered to Work
+flow=Lower blood sugar → glycogen depletion → increasing use of stored fat → ketones
+
+closing=
+A practical explanation may be equally important:
+fasting reduced overall food intake and simplified decision-making.
+
+[slide] 
+type=title
+
+image=images/fridge-freezer.png 
+
+[slide] 
+type=feedback
+eyebrow=THE BIGGER IDEA 
+title=Fasting Is a Method 
+subtitle=But Not the Whole Story 
+items=Scale = speedometer.\nFasting / diet / exercise= pedals.\nPerson = driver. 
+note=The driver observes the speed and makes small adjustments. 
+closing=Measurement + feedback + willingness to
+adjust may matter more than one particular diet. 
+
+[slide] 
+type=list
+eyebrow=WHAT NEXT? 
+title=What Was Learnt? 
+items=
+Regular measurement matters.
+Weekly trends matter more than daily fluctuations.
+Short repeated fasts were easier to sustain than prolonged restriction.
+Weight can be viewed as a feedback-control problem.
+
+[slide] 
+type=list
+title= What Is Significant? 
+items=
+Weight reduced from approximately 16.5 stone to approximately 15 stone.
+Reduction occurred without calorie counting.
+Weight increased when measurement and fasting stopped.
+Measurement itself appeared to influence behaviour. 
+
+[slide] 
+type=list
+title=Questions Raised 
+items=
+What is blood sugar?
+What is low blood sugar?
+What are simpler ways to deplete glycogen?
+How does weight fluctuate during fasting, eating and feasting?
+How do rested, full and fasted weight help understand potential weekly weight loss?
+Can these measurements forecast potential fasting-related weight loss?
+What is the best path of fasting?
+How could someone with no fasting experience begin using fasting as a weight-loss method? 
+
+[slide] 
+type=list
+eyebrow=MEASUREMENT 
+title=Note on Measurement
+items=
+Sometimes the best weight during a day was recorded rather than a fixed time.
+Spreadsheet data entry can contain human error.
+A simple measurement/control system might allow food quality and quantity to be adjusted.
+Future work could consider sugar, fat and glycogen stores.
+
+note=Measurement is critical to the process.
+
+[slide] 
+type=list
+eyebrow=CLOSING REFLECTION 
+title=A Defined Period of Observation
+
+items=
+Meaningful weight change can occur without following a particular restricted-food diet.
+Fasting can produce weight loss without focusing on food quality and quantity during eating periods.
+Measurement created greater awareness of food choices.
+Long-term management may depend more on measurement, feedback and small behavioural adjustments than finding the perfect diet.
+Fasting was useful, but not the whole story.
+The key lesson was managing weight over time realistically and sustainably. 
+
+[slide] 
+type=list
+eyebrow=FURTHER WORK 
+title=Questions for More Structured Research 
+items=
+Defended/stabilised weight range — set-point.
+Fasting duration, glycogen depletion and conversion of fat to ketones.
+Low-intensity activity while fasted.
+Effects of regular measurement and feedback on behaviour. 
+
+note=There is more to investigate. 
+ 
+
+[slide] 
+type=list
+title=Background Reading and Influences 
+
+items=Patrick Holford — Optimum Nutrition.
+Patrick Holford — The Low GL Diet Bible.
+Alan Goldhamer & Douglas Lisle — The Pleasure Trap.
+Alan Goldhamer — Can Fasting Save Your Life? 
+
+note=These writers influences provide background to the personal case study.
+

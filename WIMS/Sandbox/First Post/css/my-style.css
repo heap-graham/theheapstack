@@ -1,0 +1,231 @@
+/* ==========================================================================
+   1. GLOBAL & CORE LAYOUT SETUP
+   ========================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0ed; /* Subtle gray background contrast for the paper page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Master constraint container to keep content readable on ultra-wide screens */
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+/* ==========================================================================
+   2. MAIN CONTENT AREA (NEWSPRINT PAPER STYLE)
+   ========================================================================== */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fbfbf9; /* Traditional newsprint paper tone */
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+/* ==========================================================================
+   3. SIDEBAR STRUCTURES
+   ========================================================================== */
+aside {
+    flex: 0 0 240px; /* Fixed, rigid layout width for sidebars */
+    padding: 20px;
+    background-color: #f7f7f4; /* Slightly darkened paper tone for contrast */
+    box-sizing: border-box;
+}
+
+/* Sidebar heading styles */
+aside h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Remove default bullets and margins */
+.sidebar-links {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Format each individual link item */
+.sidebar-links li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc; /* Vintage separator look */
+}
+
+/* Clean up link text */
+.sidebar-links a {
+    color: #222;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Add a subtle underline when hovering over a link */
+.sidebar-links a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+/* ==========================================================================
+   4. NEWSPAPER MASTHEAD BANNER
+   ========================================================================== */
+/* Container for the entire masthead banner */
+.newspaper-masthead {
+    text-align: center;
+    background-color: #fbfbf9; /* Matches the paper tone of the main content */
+    color: #111;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+/* Metadata row sitting above the title */
+.masthead-top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #111;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+/* Container that holds the ears and the title on one single line */
+.masthead-main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    max-width: 1400px;
+    margin: 15px auto;
+}
+
+/* Base style for both newspaper ears */
+.masthead-ear {
+    flex: 0 0 130px; /* Gives the boxes a fixed shape width */
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    padding: 8px;
+    border: 1px solid #111; /* Boxed line layout typical of ears */
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+/* Massive, commanding newspaper headline title */
+.masthead-title {
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 4rem; /* Balanced lower scale value to accommodate side spacing */
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+}
+
+/* Bottom decorative border with a motto */
+.masthead-motto {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 8px 0;
+    margin-top: 10px;
+    border-top: 4px double #111; /* Classic thick-thin double rule line */
+    border-bottom: 1px solid #111;
+}
+
+/* ==========================================================================
+   5. VIDEO CONTROLS
+   ========================================================================== */
+/* Video container styling to keep it wide and responsive */
+.featured-video {
+    margin-bottom: 30px;
+    border-bottom: 3px double #333; /* Classic editorial dividing line */
+    padding-bottom: 20px;
+}
+
+.featured-video h2 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.featured-video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* ==========================================================================
+   6. ARTICLE & COLUMNS LAYOUT ENGINE
+   ========================================================================== */
+/* Newspaper multi-column engine */
+.newspaper-article {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px solid #ddd;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.newspaper-article h2 {
+    column-span: all; /* Spans the headline across all three columns */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #111;
+    padding-bottom: 5px;
+}
+
+.newspaper-article p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Drop Cap treatment */
+.newspaper-article p:first-of-type::first-letter {
+    font-size: 4.5rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 12px;
+    margin-top: 4px;
+}
+
+/* ==========================================================================
+   7. PAGE FOOTER
+   ========================================================================== */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes footer down if page is short */
+}

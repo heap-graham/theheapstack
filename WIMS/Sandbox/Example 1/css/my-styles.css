@@ -1,0 +1,340 @@
+/*
+Use this ordering inside every CSS block:
+1. Layout
+2. Size
+3. Spacing
+4. Border
+5. Background
+6. Text
+7. Effects
+*/
+
+/* --- 0. RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HEADER CENTERING BLOCK --- */
+header {
+    display: block; /* 1. Layout */
+    margin-bottom: 20px; /* 3. Spacing */
+    text-align: center; /* 6. Text */
+}
+
+/* --- GLOBAL STYLES --- */
+html,
+body {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    height: 100%; /* 2. Size */
+    min-height: 100vh; /* 2. Size */
+    padding: 0 40px; /* 3. Spacing */
+    margin: 0; /* 3. Spacing */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+    color: darkblue; /* 6. Text */
+    font-family: Arial, sans-serif; /* 6. Text */
+    line-height: 1.5; /* 6. Text */
+}
+
+/* --- NAVIGATION --- */
+nav {
+    margin-top: 40px; /* 3. Spacing */
+    background-color: black; /* 5. Background */
+    padding: 0; /* 3. Spacing (Moved up to grouping) */
+}
+
+nav ul {
+    display: flex; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    max-width: 1200px; /* 2. Size */
+    padding: 0; /* 3. Spacing */
+    margin: 0; /* 3. Spacing */
+    list-style-type: none; /* 6. Text */
+}
+
+nav ul li {
+    flex: 1; /* 1. Layout */
+    min-width: max-content; /* 2. Size */
+}
+
+nav a {
+    display: block; /* 1. Layout */
+    padding: 14px 10px; /* 3. Spacing */
+    color: white; /* 6. Text */
+    text-align: center; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    white-space: nowrap; /* 6. Text */
+}
+
+nav a:hover {
+    background-color: whitesmoke; /* 5. Background */
+    color: darkblue; /* 6. Text */
+}
+
+/* --- MAIN CONTENT AREA --- */
+main {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex-grow: 1; /* 1. Layout - Replaces flex: 1 0 auto */
+    justify-content: flex-start; /* 1. Layout - Forces children to stack tightly from the top */
+    width: 100%; /* 2. Size */
+    max-width: 900px; /* 2. Size */
+    padding: 20px; /* 3. Spacing */
+    margin: 0 auto; /* 3. Spacing */
+}
+
+/* --- HEADINGS & TEXT --- */
+h1 {
+    font-size: 26px; /* 6. Text */
+}
+
+h2 {
+    font-size: 22px; /* 6. Text */
+}
+
+p {
+    margin-bottom: 10px; /* 3. Spacing */
+    font-size: 1.1rem; /* 6. Text */
+    line-height: 1.7; /* 6. Text */
+    text-align: justify; /* 6. Text */
+}
+
+.left-text {
+    text-align: left !important;
+}
+.center-text {
+    text-align: center !important;
+}
+
+header,
+h1,
+h2 {
+    text-align: center; /* 6. Text */
+}
+
+header p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+p:last-of-type {
+    margin-bottom: 0; /* 3. Remove spacing from last paragraph */
+}
+
+/* --- IMAGES & MEDIA --- */
+figure {
+    text-align: center; /* 6. Text */
+    padding: 20px; /* 3. Spacing */
+}
+
+figure img {
+    width: 25%; /* 2. Size */
+    max-width: 600px; /* 2. Size */
+    height: auto; /* 2. Size */
+    border: 1px solid white; /* 4. Border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 7. Effects */
+}
+
+/* --- FORMS --- */
+form {
+    max-width: 70%;
+    padding: 20px;
+    margin: 20px auto 0 auto; /* Reduce bottom margin to 0*/
+    border: 1px solid smokewhite;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Updated textarea block using your 1-to-7 rule sequence */
+textarea {
+    resize: vertical; /* 1. Layout */
+    height: 150px; /* 2. Size */
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+/* Table of Contents Styling */
+#table-of-contents {
+    /* 1. BACKGROUND COLOR (Light Gray) */
+    background-color: #f9f9f9;
+
+    /* 2. BORDER COLOR (Light Gray/Line) */
+    border: 1px solid #ddd;
+
+    /*3 Font Colour */
+    color: darkblue; /* Add this line to change plain text color (e.g., Charcoal) */
+
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+#table-of-contents h1 {
+    font-size: 20px; /* Adjust this value to change the text size */
+    margin-top: 0; /* Optional: removes default top spacing */
+    color: darkblue; /* Optional: changes header text color */
+}
+
+#table-of-contents ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding-left: 20px;
+}
+
+#table-of-contents a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#table-of-contents a:hover {
+    text-decoration: underline;
+}
+
+.no-bullets {
+    list-style-type: none; /* Removes the bullet points */
+    padding-left: 0; /* Removes default left indentation */
+    margin-left: 0; /* Ensures alignment with the page edge */
+}
+
+/* --- SEPARATORS --- */
+hr {
+    display: block !important; /* 1. Layout */
+    height: 0 !important; /* 2. Size - Flatten the inside completely */
+    margin-top: 30px !important; /* 3. Spacing - Creates transparent gap ABOVE the line */
+    margin-bottom: 30px !important; /* 3. Spacing - Creates transparent gap BELOW the line */
+    padding: 0 !important; /* 3. Spacing - Zero out the internal padding completely */
+    border: none !important; /* 4. Border */
+    border-top: 1px solid darkblue !important; /* 4. Border - This forms your clean line */
+}
+
+/* 1. Standard Desktop Flex Row */
+.media-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important; /* Forces the BOTTOM edges to align */
+    gap: 30px !important;
+    margin: 25px 0 !important;
+    width: 100% !important;
+}
+
+/* 2. Simple block containers */
+.media-row .report-image-container {
+    flex: 1 !important;
+    display: block !important;
+}
+
+/* 3. Forces the shorter image to drop down to the bottom */
+.media-row .report-image-container img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-top: auto !important; /* Creates an empty space cushion above the table */
+    margin-bottom: 8px !important; /* Space above the text caption */
+}
+
+/* 4. Text alignment on the baseline */
+.caption {
+    font-size: 0.9rem !important;
+    color: #555555 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+/* 5. Mobile responsive stack reset */
+@media (max-width: 768px) {
+    .media-row {
+        flex-direction: column !important;
+        gap: 25px !important;
+    }
+}
+/* Table structural constraints */
+.summary-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-family: sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Base header and body padding definitions */
+.summary-table th,
+.summary-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Subtle header styling accent */
+.summary-table th {
+    background-color: #f7f9fa;
+    color: #333333;
+    font-weight: 600;
+}
+
+/* Alternate row striping to ease desktop text tracking */
+.summary-table tbody tr:nth-of-type(even) {
+    background-color: #fcfdfe;
+}
+
+/* Alignment utilities */
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+/* Optional color formatting to help trend visualizations standout */
+.negative {
+    color: #c0392b; /* Subtle Red for weight lost */
+}
+.positive {
+    color: #27ae60; /* Subtle Green for weight gained */
+}
+
+/* --- FOOTER --- */
+footer {
+    /* 1. Layout */
+    display: flex;
+    justify-content: center; /* Pulls both text lines tightly to the center */
+    align-items: center;
+    flex-wrap: wrap; /* Lets them stack safely on small mobile screens */
+    gap: 40px; /* FIX: Puts a neat 20px space between the text lines */
+
+    /* 2. Size */
+    height: auto; /* FIX: Box shrinks naturally around your text lines */
+
+    /* 3. Spacing */
+    margin-top: 0px; /* Breathing room below your <hr /> divider line */
+    padding-bottom: 40px; /* Spacing at the very bottom of the web page */
+
+    /* 6. Text */
+    font-size: 0.9em;
+    text-align: center;
+}

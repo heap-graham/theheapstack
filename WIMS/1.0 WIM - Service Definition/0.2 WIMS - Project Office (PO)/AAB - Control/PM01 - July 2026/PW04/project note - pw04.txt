@@ -1,0 +1,23 @@
+**Today's Plan – Action Item**
+
+**ZZZ – WIMS – WIMS Discussion Summary: Educational Scope, Ethics, Governance and Professional Boundaries**
+
+**Objective**
+
+Review, refine and consolidate the discussion summary into a structured working document suitable for inclusion within the WIMS Service Definition.
+
+**Activities**
+
+* Review the overall structure and flow of the document.
+* Remove repetition and improve clarity.
+* Refine terminology and ensure consistency with the WIMS philosophy.
+* Distinguish clearly between educational content, mentoring, governance and professional boundaries.
+* Review the proposed WIMS Position Statement.
+* Validate the educational model and learning cycle.
+* Confirm the service scope and user responsibilities.
+* Consider where the document should ultimately reside within the WIMS documentation structure (e.g. Service Definition, Governance or Educational Philosophy).
+* Produce Version 1.0 of the discussion paper.
+
+**Expected Outcome**
+
+A polished foundational document defining the educational scope, ethical principles, governance considerations and professional boundaries of the WIMS Educational Platform and Weight Insight Mentoring Service.

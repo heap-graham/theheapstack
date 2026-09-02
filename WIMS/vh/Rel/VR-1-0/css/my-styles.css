@@ -1,0 +1,133 @@
+/*
+ 
+Use this ordering inside every CSS block:
+
+1. Layout
+2. Size
+3. Spacing
+4. Border
+5. Background
+6. Text
+7. Effects
+
+*/
+
+/* 1. Reset & use universal styles              */
+/* zero margin and padding set                  */
+/* Set background colour and main font colour.  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+header {
+    margin-top: 40px; /* Adds 40 pixels of crisp white space at the very top */
+}
+body {   
+  
+  line-height: 1.5;
+  background-color: rgb(255, 243, 205);
+  color: darkblue;
+  font-family: Arial, sans-serif;
+  justify-content: justify;
+  max-width:fit-content;
+  padding: 0 40px;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p { 
+    font-size: 1.1rem ;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.MyCentre {
+  text-align: center;
+}
+
+.image-box {
+    text-align: center;      /* Centers the image box on the page */
+    padding: 20px;           /* Adds space around the outside of the box */
+}
+
+.image-box img {
+    width: 25%;             /* Allows the image to scale down on smaller viewports */
+    max-width: 600px;        /* Limits the maximum size of the box on big screens */
+    height: auto;            /* Keeps the image proportions perfect */
+    border: 1px solid #ccc;  /* Optional: Adds a subtle border around the box */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* Optional: Adds a soft shadow */
+}
+
+form {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100%;
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 40px 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}

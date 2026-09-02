@@ -1,0 +1,269 @@
+/*
+Strict Property Ordering Sequence Map:
+1. Layout
+2. Size
+3. Spacing
+4. Border
+5. Background
+6. Text
+7. Effects
+*/
+
+/* --- 0. RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- GLOBAL HTML/BODY STYLES --- */
+html,
+body {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    height: 100%; /* 2. Size */
+    min-height: 100vh; /* 2. Size */
+    padding: 0; /* 3. Spacing */
+    margin: 0; /* 3. Spacing */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+    color: darkblue; /* 6. Text */
+    font-family: Arial, sans-serif; /* 6. Text */
+    line-height: 1.5; /* 6. Text */
+}
+
+/* --- 1. TOP BAR HEADER --- */
+.top-bar-header {
+    display: flex; /* 1. Layout */
+    align-items: center; /* 1. Layout */
+    justify-content: space-between; /* 1. Layout */
+    position: sticky; /* 1. Layout */
+    top: 0; /* 1. Layout */
+    z-index: 100; /* 1. Layout */
+    height: 60px; /* 2. Size */
+    padding: 0 40px; /* 3. Spacing */
+    border-bottom: 1px solid darkblue; /* 4. Border */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+}
+
+.logo {
+    font-weight: 700; /* 6. Text */
+    font-size: 1.3rem; /* 6. Text */
+    color: darkblue; /* 6. Text */
+}
+
+/* Top Mega Menu Row Wrapper */
+.top-mega-menu {
+    position: relative; /* 1. Layout */
+}
+
+.mega-menu-trigger {
+    padding: 10px 15px; /* 3. Spacing */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 4px; /* 4. Border */
+    background-color: transparent; /* 5. Background */
+    color: darkblue; /* 6. Text */
+    font-weight: bold; /* 6. Text */
+    cursor: pointer; /* 6. Text */
+}
+
+.mega-menu-dropdown {
+    display: none; /* 1. Layout */
+    grid-template-columns: repeat(3, 200px); /* 1. Layout */
+    gap: 20px; /* 1. Layout */
+    position: absolute; /* 1. Layout */
+    top: 100%; /* 1. Layout */
+    left: 50%; /* 1. Layout */
+    transform: translateX(-50%); /* 1. Layout */
+    z-index: 200; /* 1. Layout */
+    padding: 20px; /* 3. Spacing */
+    margin-top: 5px; /* 3. Spacing */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 6px; /* 4. Border */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* 7. Effects */
+}
+
+.top-mega-menu:hover .mega-menu-dropdown {
+    display: grid; /* 1. Layout */
+}
+
+.top-menu-column {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    gap: 8px; /* 1. Layout */
+}
+
+.column-title {
+    margin-bottom: 5px; /* 3. Spacing */
+    border-bottom: 1px solid rgba(0, 0, 139, 0.2); /* 4. Border */
+    font-size: 0.85rem; /* 6. Text */
+    text-transform: uppercase; /* 6. Text */
+    letter-spacing: 0.5px; /* 6. Text */
+    color: darkblue; /* 6. Text */
+}
+
+.top-menu-column a {
+    display: block; /* 1. Layout */
+    padding: 6px 8px; /* 3. Spacing */
+    border-radius: 4px; /* 4. Border */
+    color: darkblue; /* 6. Text */
+    text-align: left; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-size: 0.95rem; /* 6. Text */
+}
+
+.top-menu-column a:hover {
+    background-color: black; /* 5. Background */
+    color: white; /* 6. Text */
+}
+
+/* --- 2. STRUCTURAL WRAPPERS --- */
+.app-layout-wrapper {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex-grow: 1; /* 1. Layout */
+    overflow: hidden; /* 1. Layout - Keeps sidebars cleanly bounded */
+}
+
+.main-container {
+    display: grid; /* 1. Layout */
+    grid-template-columns: 240px 1fr 280px; /* 1. Layout - Left Sidebar, Center Main, Right Sidebar */
+    flex-grow: 1; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    overflow: hidden; /* 1. Layout */
+}
+
+/* Shared aside/sidebar structural styles */
+.sidebar {
+    overflow-y: auto; /* 1. Layout */
+    padding: 30px 20px; /* 3. Spacing */
+}
+
+/* --- 3. LEFT ASIDE (Primary App Nav) --- */
+.left-sidebar {
+    border-right: 1px solid darkblue; /* 4. Border */
+}
+
+.menu-group {
+    margin-bottom: 25px; /* 3. Spacing */
+}
+
+.menu-title {
+    margin-bottom: 10px; /* 3. Spacing */
+    font-size: 0.75rem; /* 6. Text */
+    text-transform: uppercase; /* 6. Text */
+    letter-spacing: 1px; /* 6. Text */
+    color: darkblue; /* 6. Text */
+    opacity: 0.7; /* 6. Text */
+}
+
+.menu-link {
+    display: block; /* 1. Layout */
+    padding: 10px 12px; /* 3. Spacing */
+    margin-bottom: 6px; /* 3. Spacing */
+    border-radius: 4px; /* 4. Border */
+    color: darkblue; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-size: 1rem; /* 6. Text */
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background-color: black; /* 5. Background */
+    color: white; /* 6. Text */
+}
+
+/* --- 4. CENTER MAIN CONTENT AREA --- */
+main {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    justify-content: flex-start; /* 1. Layout */
+    overflow-y: auto; /* 1. Layout - Independent content scrolling */
+    width: 100%; /* 2. Size */
+    padding: 30px; /* 3. Spacing */
+}
+
+.card {
+    padding: 20px; /* 3. Spacing */
+    margin-bottom: 20px; /* 3. Spacing */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 6px; /* 4. Border */
+    background-color: rgba(255, 255, 255, 0.3); /* 5. Background */
+}
+
+h2 {
+    font-size: 22px; /* 6. Text */
+    margin-bottom: 10px; /* 3. Spacing */
+}
+
+/* --- 5. RIGHT ASIDE (Mentoring Interactions) --- */
+.right-sidebar {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    gap: 20px; /* 1. Layout */
+    border-left: 1px solid darkblue; /* 4. Border */
+}
+
+.btn-primary {
+    display: block; /* 1. Layout */
+    padding: 12px; /* 3. Spacing */
+    border-radius: 4px; /* 4. Border */
+    background-color: darkblue; /* 5. Background */
+    color: white; /* 6. Text */
+    text-align: center; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-weight: bold; /* 6. Text */
+}
+
+.btn-primary:hover {
+    background-color: black; /* 5. Background */
+}
+
+.chat-box {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex: 1; /* 1. Layout */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 4px; /* 4. Border */
+    background: rgba(255, 255, 255, 0.4); /* 5. Background */
+    overflow: hidden; /* 7. Effects */
+}
+
+.chat-header {
+    padding: 10px 12px; /* 3. Spacing */
+    border-bottom: 1px solid darkblue; /* 4. Border */
+    background: black; /* 5. Background */
+    font-size: 0.85rem; /* 6. Text */
+    font-weight: bold; /* 6. Text */
+    color: white; /* 6. Text */
+}
+
+.chat-messages {
+    flex: 1; /* 1. Layout */
+    overflow-y: auto; /* 1. Layout */
+    padding: 12px; /* 3. Spacing */
+    font-size: 0.9rem; /* 6. Text */
+}
+
+/* --- 6. FOOTER BAR --- */
+footer {
+    display: flex; /* 1. Layout */
+    justify-content: center; /* 1. Layout */
+    align-items: center; /* 1. Layout */
+    padding: 20px 0; /* 3. Spacing */
+    border-top: 1px solid darkblue; /* 4. Border */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+    font-size: 0.9em; /* 6. Text */
+}
+
+/* --- 7. RESPONSIVE MOBILE OVERRIDE --- */
+@media (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 1fr; /* 1. Layout - Drop layout columns cleanly on small displays */
+        overflow: visible; /* 1. Layout */
+    }
+    .sidebar {
+        border: none; /* 4. Border */
+        overflow-y: visible; /* 1. Layout */
+    }
+}

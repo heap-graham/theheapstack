@@ -1,0 +1,25 @@
+0.2 WIMS - Plan
+│
+├── Planning
+│   • Master Plan
+│   • Service Definition & Implementation Plan
+│   • Stable Educational Platform
+│
+├── Scheduling
+│   • Master Schedule
+│   • Project Calendar
+│   • July Plan
+│   • Work to Completion
+│
+├── Reporting
+│   • Weekly Reviews
+│   • Progress Reports
+│   • Development Session Reports
+│   • Platform Reviews
+│
+├── Governance
+│   • Risk Assessment
+│   • Workstream Planning Principles
+│   • Project Charter
+│
+└── Archive / Templates

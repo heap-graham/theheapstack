@@ -1,0 +1,9 @@
+Future Planning Activities
+
+• Develop the WIMS Work Breakdown Structure (WBS).
+
+Status:
+Deferred until PM02 (August 2026).
+
+Reason:
+Complete the baseline review and gain implementation experience before defining the WBS.

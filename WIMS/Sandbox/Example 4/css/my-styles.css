@@ -1,0 +1,396 @@
+/*
+Use this ordering inside every CSS block:
+1. Layout
+2. Size
+3. Spacing
+4. Border
+5. Background
+6. Text
+7. Effects
+*/
+
+/* --- 0. RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HEADER CENTERING BLOCK --- */
+header {
+    display: block; /* 1. Layout */
+    margin-bottom: 20px; /* 3. Spacing */
+    text-align: center; /* 6. Text */
+}
+
+/* --- GLOBAL STYLES --- */
+html,
+body {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    height: 100%; /* 2. Size */
+    min-height: 100vh; /* 2. Size */
+    padding: 0; /* 3. Spacing - Set to 0 to let top-bar touch screen boundaries */
+    margin: 0; /* 3. Spacing */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+    color: darkblue; /* 6. Text */
+    font-family: Arial, sans-serif; /* 6. Text */
+    line-height: 1.5; /* 6. Text */
+}
+
+/* --- NEW COMPONENT: TOP BAR LAYOUT --- */
+.top-bar {
+    display: flex; /* 1. Layout */
+    align-items: center; /* 1. Layout */
+    justify-content: space-between; /* 1. Layout */
+    position: sticky; /* 1. Layout */
+    top: 0; /* 1. Layout */
+    z-index: 100; /* 1. Layout */
+    height: 60px; /* 2. Size */
+    padding: 0 40px; /* 3. Spacing - Inherits original page horizontal inset padding */
+    border-bottom: 1px solid darkblue; /* 4. Border */
+    background-color: rgb(255, 243, 205); /* 5. Background */
+}
+
+.top-bar .logo {
+    font-weight: 700; /* 6. Text */
+    font-size: 1.3rem; /* 6. Text */
+    color: darkblue; /* 6. Text */
+}
+
+.top-bar .search-bar {
+    width: 300px; /* 2. Size */
+    padding: 8px 12px; /* 3. Spacing */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 4px; /* 4. Border */
+    font-size: 0.9rem; /* 6. Text */
+}
+
+.top-bar .user-profile {
+    display: flex; /* 1. Layout */
+    align-items: center; /* 1. Layout */
+    font-weight: bold; /* 6. Text */
+}
+
+/* --- NEW COMPONENT: APPLICATION WRAPPER & STRUCTURAL GRID --- */
+.app-layout-wrapper {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex-grow: 1; /* 1. Layout */
+    overflow: hidden; /* 1. Layout - Keeps structural panels bounded to single viewport view */
+}
+
+.main-container {
+    display: grid; /* 1. Layout */
+    grid-template-columns: 240px 1fr 280px; /* 1. Layout - Left Sidebar, Main Content, Right Sidebar */
+    flex-grow: 1; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    overflow: hidden; /* 1. Layout */
+}
+
+/* Shared Sidebar Structural Defaults */
+.sidebar {
+    overflow-y: auto; /* 1. Layout */
+    padding: 30px 20px; /* 3. Spacing */
+}
+
+/* --- NEW COMPONENT: LEFT SIDEBAR (Primary Navigation & Education) --- */
+.left-sidebar {
+    border-right: 1px solid darkblue; /* 4. Border */
+}
+
+.menu-group {
+    margin-bottom: 25px; /* 3. Spacing */
+}
+
+.menu-title {
+    margin-bottom: 10px; /* 3. Spacing */
+    font-size: 0.75rem; /* 6. Text */
+    text-transform: uppercase; /* 6. Text */
+    letter-spacing: 1px; /* 6. Text */
+    color: darkblue; /* 6. Text */
+    opacity: 0.7; /* 6. Text */
+}
+
+.menu-link {
+    display: block; /* 1. Layout */
+    padding: 10px 12px; /* 3. Spacing */
+    margin-bottom: 6px; /* 3. Spacing */
+    border-radius: 4px; /* 4. Border */
+    color: darkblue; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-size: 1rem; /* 6. Text */
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background-color: black; /* 5. Background */
+    color: white; /* 6. Text */
+}
+
+/* --- NAVIGATION (Preserved Original) --- */
+nav {
+    margin-top: 40px; /* 3. Spacing */
+    padding: 0; /* 3. Spacing */
+    background-color: black; /* 5. Background */
+}
+
+nav ul {
+    display: flex; /* 1. Layout */
+    width: 100%; /* 2. Size */
+    max-width: 1200px; /* 2. Size */
+    padding: 0; /* 3. Spacing */
+    margin: 0; /* 3. Spacing */
+    list-style-type: none; /* 6. Text */
+}
+
+nav ul li {
+    flex: 1; /* 1. Layout */
+    min-width: max-content; /* 2. Size */
+}
+
+nav a {
+    display: block; /* 1. Layout */
+    padding: 14px 10px; /* 3. Spacing */
+    color: white; /* 6. Text */
+    text-align: center; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    white-space: nowrap; /* 6. Text */
+}
+
+nav a:hover {
+    background-color: whitesmoke; /* 5. Background */
+    color: darkblue; /* 6. Text */
+}
+
+/* --- MAIN CONTENT AREA (Updated to fit 3-Column setup scrolling) --- */
+main {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    justify-content: flex-start; /* 1. Layout */
+    overflow-y: auto; /* 1. Layout - Center section scrolls cleanly independently */
+    width: 100%; /* 2. Size */
+    padding: 30px; /* 3. Spacing */
+}
+
+/* --- NEW COMPONENT: RIGHT SIDEBAR (Mentoring Suite) --- */
+.right-sidebar {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    gap: 20px; /* 1. Layout */
+    border-left: 1px solid darkblue; /* 4. Border */
+}
+
+.btn-primary {
+    display: block; /* 1. Layout */
+    padding: 12px; /* 3. Spacing */
+    border-radius: 4px; /* 4. Border */
+    background-color: darkblue; /* 5. Background */
+    color: white; /* 6. Text */
+    text-align: center; /* 6. Text */
+    text-decoration: none; /* 6. Text */
+    font-weight: bold; /* 6. Text */
+}
+
+.btn-primary:hover {
+    background-color: black; /* 5. Background */
+}
+
+.target-text {
+    margin-top: 5px; /* 3. Spacing */
+    font-size: 0.95rem; /* 6. Text */
+    color: darkblue; /* 6. Text */
+}
+
+.chat-box {
+    display: flex; /* 1. Layout */
+    flex-direction: column; /* 1. Layout */
+    flex: 1; /* 1. Layout */
+    border: 1px solid darkblue; /* 4. Border */
+    border-radius: 4px; /* 4. Border */
+    background: rgba(255, 255, 255, 0.4); /* 5. Background */
+    overflow: hidden; /* 7. Effects */
+}
+
+.chat-header {
+    padding: 10px 12px; /* 3. Spacing */
+    border-bottom: 1px solid darkblue; /* 4. Border */
+    background: black; /* 5. Background */
+    font-size: 0.85rem; /* 6. Text */
+    font-weight: bold; /* 6. Text */
+    color: white; /* 6. Text */
+}
+
+.chat-messages {
+    flex: 1; /* 1. Layout */
+    overflow-y: auto; /* 1. Layout */
+    padding: 12px; /* 3. Spacing */
+    font-size: 0.9rem; /* 6. Text */
+    line-height: 1.4; /* 6. Text */
+}
+
+/* --- HEADINGS & TEXT --- */
+h1 {
+    font-size: 26px; /* 6. Text */
+}
+
+h2 {
+    font-size: 22px; /* 6. Text */
+}
+
+p {
+    margin-bottom: 10px; /* 3. Spacing */
+    font-size: 1.1rem; /* 6. Text */
+    line-height: 1.7; /* 6. Text */
+    text-align: justify; /* 6. Text */
+}
+
+.left-text {
+    text-align: left !important;
+}
+.center-text {
+    text-align: center !important;
+}
+
+header,
+h1,
+h2 {
+    text-align: center; /* 6. Text */
+}
+
+header p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+p:last-of-type {
+    margin-bottom: 0; /* 3. Remove spacing from last paragraph */
+}
+
+/* --- IMAGES & MEDIA --- */
+figure {
+    text-align: center; /* 6. Text */
+    padding: 20px; /* 3. Spacing */
+}
+
+figure img {
+    width: 25%; /* 2. Size */
+    max-width: 600px; /* 2. Size */
+    height: auto; /* 2. Size */
+    border: 1px solid white; /* 4. Border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 7. Effects */
+}
+
+/* --- FORMS --- */
+form {
+    max-width: 70%;
+    padding: 20px;
+    margin: 20px auto 0 auto; /* Reduce bottom margin to 0*/
+    border: 1px solid smokewhite;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Updated textarea block using your 1-to-7 rule sequence */
+textarea {
+    resize: vertical; /* 1. Layout */
+    height: 150px; /* 2. Size */
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+/* Table of Contents Styling */
+#table-of-contents {
+    /* 1. BACKGROUND COLOR (Light Gray) */
+    background-color: #f9f9f9;
+
+    /* 2. BORDER COLOR (Light Gray/Line) */
+    border: 1px solid #ddd;
+
+    /*3 Font Colour */
+    color: darkblue; /* Add this line to change plain text color (e.g., Charcoal) */
+
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+#table-of-contents h1 {
+    font-size: 20px; /* Adjust this value to change the text size */
+    margin-top: 0; /* Optional: removes default top spacing */
+    color: darkblue; /* Optional: changes header text color */
+}
+
+#table-of-contents ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding-left: 20px;
+}
+
+#table-of-contents a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#table-of-contents a:hover {
+    text-decoration: underline;
+}
+
+.no-bullets {
+    list-style-type: none; /* Removes the bullet points */
+    padding-left: 0; /* Removes default left indentation */
+    margin-left: 0; /* Ensures alignment with the page edge */
+}
+
+/* --- SEPARATORS --- */
+hr {
+    display: block !important; /* 1. Layout */
+    height: 0 !important; /* 2. Size - Flatten the inside completely */
+    margin-top: 30px !important; /* 3. Spacing - Creates transparent gap ABOVE the line */
+    margin-bottom: 30px !important; /* 3. Spacing - Creates transparent gap BELOW the line */
+    padding: 0 !important; /* 3. Spacing - Zero out the internal padding completely */
+    border: none !important; /* 4. Border */
+    border-top: 1px solid darkblue !important; /* 4. Border - This forms your clean line */
+}
+
+/* 1. Standard Desktop Flex Row */
+.media-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important; /* Forces the BOTTOM edges to align */
+    gap: 30px !important;
+    margin: 25px 0 !important;
+    width: 100% !important;
+}
+
+/* 2. Simple block containers */
+.media-row .report-image-container {
+    flex: 1 !important;
+    display: block !important;
+}
+
+/* 3. Forces the shorter image to drop down to the bottom */

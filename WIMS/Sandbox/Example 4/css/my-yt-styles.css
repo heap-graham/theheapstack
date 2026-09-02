@@ -1,0 +1,110 @@
+/* ==========================================================================
+   LINKEDIN PLAYER FRAMEWORK (LAYOUT ONLY)
+   ========================================================================== */
+
+/* Override global frame limitations from original CSS */
+html,
+body {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important; /* Forces clean app background */
+}
+
+/* --- TOP HORIZONTAL PLAYER BAR --- */
+.top-menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #1d2226; /* Dark corporate look */
+    border-bottom: none !important;
+}
+
+.top-menu-bar h1 {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+}
+
+/* Progress Tracker */
+.progress-container {
+    width: 200px;
+    background-color: #434649;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #057642; /* Green progress bar */
+}
+
+/* --- SPLIT CANVAS WRAPPER --- */
+.app-content-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    flex: 1 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* --- SIDEBAR COURSE OUTLINE --- */
+.left-menu {
+    width: 320px !important;
+    max-width: 320px !important;
+    flex-shrink: 0 !important;
+    overflow-y: auto !important;
+    border-right: 1px solid #e0e0e0 !important;
+    background-color: #f8f9fa !important;
+    padding: 0 !important; /* Clears original padding for clean list */
+}
+
+.left-menu .section-title {
+    padding: 15px 20px;
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1d2226;
+}
+
+.left-menu ul {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.left-menu li {
+    padding: 12px 20px 12px 35px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 0 !important; /* Overrides original list spacing */
+}
+
+.left-menu li:hover {
+    background-color: #ebebeb;
+}
+
+.left-menu li.active {
+    background-color: #e8f3fd;
+    color: #0a66c2 !important;
+    font-weight: bold;
+}
+
+.left-menu li.active a {
+    color: #0a66c2 !important;
+}
+
+/* --- MAIN READING AREA --- */
+main {
+    flex: 1 !important;
+    max-width: none !important; /* Overrides 900px restriction */
+    margin: 0 !important;       /* Overrides centering */
+    overflow-y: auto !important; /* Allows independent reading scroll */
+    padding: 40px 60px !important;
+    background-color: #ffffff !important;
+}

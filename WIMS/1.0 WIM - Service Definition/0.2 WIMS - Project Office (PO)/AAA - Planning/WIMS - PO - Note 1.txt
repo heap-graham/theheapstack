@@ -1,0 +1,9 @@
+Potential Project Office Enhancements
+
+- Risk Register
+- Issue Log
+- Decision Log
+- Change Log
+
+Status:
+Introduce only when justified by project complexity.

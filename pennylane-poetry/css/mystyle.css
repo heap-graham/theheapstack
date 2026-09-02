@@ -1,0 +1,241 @@
+/* =====================================
+   Pennylane Poetry Website
+   mystyle.css
+   ===================================== */
+
+/* Page */
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    color: darkblue;
+    background: white;
+    line-height: 1.2;
+    max-width: none;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+/* Images */
+
+img {
+    display: block;
+    margin: 10px auto 20px auto;
+    width: 30%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Titles */
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Poetry */
+p {
+    width: 35%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+/* Special transition in poem */
+
+.centre {
+    text-align: center;
+    font-style: normal;
+}
+
+.transition {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.featured-poem-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* =====================================
+   Poem List
+
+==================================== */
+.poem-frame {
+    display: block;
+    align-content: center;
+}
+.poem-frame p {
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: auto;
+}
+
+.poem-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.poem-item {
+    width: 350px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid darkblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+.poem-image-link {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.poem-image {
+    width: auto;
+    max-width: 100%;
+    height: 175px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.poem-item h3 {
+    text-align: center;
+    font-size: 14pt;
+    margin: 6px 0 2px 0;
+}
+
+.poem-subtitle {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+.poem-links {
+    text-align: center;
+    margin: 6px 0 0 0;
+    white-space: nowrap;
+}
+
+.poem-links a {
+    text-decoration: none;
+}
+
+.poem-links a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   Footer
+   ===================================== */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* Footer symbol */
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+/* =====================================
+   Small Screens
+   ===================================== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    p {
+        width: 90%;
+    }
+
+    .poem-list {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .poem-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .buttons {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}

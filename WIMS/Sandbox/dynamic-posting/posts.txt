@@ -1,0 +1,2 @@
+Welcome to My Site|||2026-07-24|||This is the first dynamic post loaded from a text file.
+New Update Released|||2026-07-25|||We have successfully updated our system to the latest version.

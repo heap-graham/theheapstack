@@ -1,0 +1,18 @@
+Directory:
+0.1 WIMS - Service Documentation
+
+Contents
+✓ Archive
+✓ Candidate Requirement WIMS-RQ-012
+✓ Weekly Review (review later)
+✓ Thanks – I've reviewed the document (review later)
+✓ Directory Structure & Baseline Documentation
+✓ Platform Definition Document
+✓ Platform Implementation
+✓ Weight Insight Monitoring Role
+✓ Service Definition Maps (Baseline)
+✓ Template
+
+Assessment
+Predominantly service definition and supporting documentation.
+Two documents require later review to determine whether they belong in this directory.

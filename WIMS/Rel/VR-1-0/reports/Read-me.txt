@@ -1,0 +1,71 @@
+WIM Support 2026 Spreadsheet User Guide
+
+[1.0] Introduction
+
+The structure of this Google Sheet consists of the following worksheets:
+
+- Your Details
+- Target-lbs
+- Target-st
+- Actuals
+- January to December
+
+The monthly worksheets are used to record your actual rested weight.
+
+For the purposes of this workbook, rested weight is defined as the weight measured in the morning after waking and before breakfast.
+
+All other calculations within the workbook are generated automatically.
+
+[1.1] Your Details
+
+Enter your current weight in Stones and Pounds.
+
+The spreadsheet uses this information to generate your target weights throughout the workbook.
+
+[1.2] Target-lbs
+
+Displays your target weight progression in Pounds.
+
+No data entry is required.
+
+[1.3] Target-st
+
+Displays your target weight progression in Stones.
+
+No data entry is required.
+
+[1.4] Actuals
+
+Provides an automatically generated summary of the weight data entered throughout the year.
+
+No data entry is required.
+
+[1.5] January to December
+
+These worksheets are used to record your actual rested weight.
+
+January is shown as the example worksheet. The remaining monthly worksheets operate in exactly the same way.
+
+Enter your weight at approximately the same time each day.
+
+The workbook automatically calculates:
+
+- Weekly Minimum Weight
+
+- Weekly Maximum Weight
+
+- Weekly Average Weight
+
+- Weekly Range
+
+- Weekly Weight Change
+
+- Target Weight
+
+- Net Achievement
+
+**** Important Note ****
+
+Weight naturally fluctuates from day to day. Individual measurements are often less important than weekly and monthly trends.
+
+The workbook provides a structured way to record information and review outcomes over time.

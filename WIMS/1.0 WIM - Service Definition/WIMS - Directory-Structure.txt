@@ -1,0 +1,38 @@
+WIMS - Service Development Directory
+====================================
+
+This directory contains all material relating to the development,
+implementation and operation of the Weight Insight Mentoring Service (WIMS).
+
+The directory is organised by functional workstreams rather than by software
+components.
+
+0.0 WIMS - The Voice
+    Identity, philosophy, tone of voice and writing standards.
+
+0.1 WIMS - Service Documentation
+    Service definition, specifications, standards and architecture.
+
+0.2 WIMS - Plan
+    Roadmaps, releases, implementation plans and project management.
+
+1.0 WIMS Book
+    Development of the WIMS book and supporting material.
+
+2.0 Educational Platform
+    Website, software, tools and technical platform.
+
+3.0 Educational Content
+    Educational articles, lessons, guides and learning resources.
+
+4.0 WIMS Emerging Practical Theory - One Case Study
+    The practical development of WIMS through a single long-term case study.
+
+5.0 WIMS Community Engagement
+    Community activities, mentoring, workshops and user engagement.
+
+6.0 WIMS Communications
+    Newsletters, announcements, promotional material and communications.
+
+ZZZ - Archive
+    Historical material retained for reference.
