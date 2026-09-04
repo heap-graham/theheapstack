@@ -7,6 +7,7 @@
  *
  */
 
+
 /* ---------------------------------------------------------
    READ SLIDES
    --------------------------------------------------------- */
@@ -15,29 +16,25 @@ $slides = [];
 $current = null;
 $currentKey = null;
 
-$lines = file("slides.txt", FILE_IGNORE_NEW_LINES);
+$lines = file('slides.txt', FILE_IGNORE_NEW_LINES);
 
 foreach ($lines as $line) {
+
     $line = rtrim($line);
 
     /* Preserve blank lines for text formatting */
-    if (trim($line) === "") {
+    if (trim($line) === '') {
+
         if ($currentKey !== null) {
-            if (is_array($current[$currentKey])) {
-                $lastIndex = count($current[$currentKey]) - 1;
-                if ($lastIndex >= 0) {
-                    $current[$currentKey][$lastIndex] .= "\n";
-                }
-            } else {
-                $current[$currentKey] .= "\n";
-            }
+            $current[$currentKey] .= "\n";
         }
 
         continue;
     }
 
     /* New slide */
-    if (trim($line) === "[slide]") {
+    if (trim($line) === '[slide]') {
+
         if ($current !== null) {
             $slides[] = $current;
         }
@@ -52,14 +49,16 @@ foreach ($lines as $line) {
     }
 
     /* New keyword / field */
-    if (strpos($line, "=") !== false) {
-        [$key, $value] = explode("=", $line, 2);
+    if (strpos($line, '=') !== false) {
+
+        [$key, $value] = explode('=', $line, 2);
 
         $key = trim($key);
         $value = trim($value);
 
         /* Allow repeated image= entries */
-        if ($key === "image") {
+        if ($key === 'image') {
+
             if (!isset($current[$key])) {
                 $current[$key] = [$value];
             } else {
@@ -71,7 +70,8 @@ foreach ($lines as $line) {
         }
 
         /* Allow repeated column= entries */
-        if ($key === "column") {
+        if ($key === 'column') {
+
             if (!isset($current[$key])) {
                 $current[$key] = [$value];
             } else {
@@ -79,17 +79,6 @@ foreach ($lines as $line) {
             }
 
             $currentKey = null;
-            continue;
-        }
-
-        /* Allow repeated items= entries */
-        if ($key === "items") {
-            if (!isset($current[$key]) || !is_array($current[$key])) {
-                $current[$key] = [];
-            }
-
-            $current[$key][] = $value;
-            $currentKey = $key;
             continue;
         }
 
@@ -101,12 +90,8 @@ foreach ($lines as $line) {
 
     /* Continuation line */
     if ($currentKey !== null) {
-        if ($currentKey === "items" && is_array($current[$currentKey])) {
-            $lastIndex = count($current[$currentKey]) - 1;
-            $current[$currentKey][$lastIndex] .= "\n" . trim($line);
-        } else {
-            $current[$currentKey] .= "\n" . trim($line);
-        }
+
+        $current[$currentKey] .= "\n" . trim($line);
     }
 }
 
@@ -116,37 +101,88 @@ if ($current !== null) {
 
 $totalSlides = count($slides);
 
+
+/* ---------------------------------------------------------
+   READ SPEAKER NOTES
+   --------------------------------------------------------- */
+$speakerNotes = [];
+$topNotes = '';
+$tailNotes = '';
+$notesFile = __DIR__ . '/speakers-notes.txt';
+
+if (is_file($notesFile)) {
+    $noteLines = file($notesFile, FILE_IGNORE_NEW_LINES);
+    $currentSection = null;
+    $sections = [];
+
+    foreach ($noteLines as $line) {
+        $trimmed = trim($line);
+        if (preg_match('/^\[(TOP|TAIL|SLIDE\s+\d+)\](?:\s*—.*)?$/i', $trimmed, $match)) {
+            $currentSection = strtoupper($match[1]);
+            $sections[$currentSection] = [];
+            continue;
+        }
+        if ($currentSection !== null) {
+            $sections[$currentSection][] = $line;
+        }
+    }
+
+    foreach ($sections as $section => $sectionLines) {
+        $text = trim(implode("\n", $sectionLines));
+        if ($section === 'TOP') {
+            $topNotes = $text;
+        } elseif ($section === 'TAIL') {
+            $tailNotes = $text;
+        } elseif (preg_match('/^SLIDE (\d+)$/', $section, $match)) {
+            $speakerNotes[(int)$match[1]] = $text;
+        }
+    }
+}
+
+
 /* ---------------------------------------------------------
    HELPER FUNCTIONS
    --------------------------------------------------------- */
 
 function e($value)
 {
-    return htmlspecialchars($value ?? "", ENT_QUOTES, "UTF-8");
+    return htmlspecialchars(
+        $value ?? '',
+        ENT_QUOTES,
+        'UTF-8'
+    );
 }
 
 function lines($value)
 {
-    return nl2br(e(str_replace("|", "\n", $value ?? "")));
+    return nl2br(
+        e(
+            str_replace('|', "\n", $value ?? '')
+        )
+    );
 }
 
 function paragraphs($value)
 {
-    $value = trim($value ?? "");
+    $value = trim($value ?? '');
 
-    if ($value === "") {
-        return "";
+    if ($value === '') {
+        return '';
     }
 
     /*
      * Three or more newline characters mean
      * two or more blank lines = new paragraph.
      */
-    $paragraphs = preg_split("/\n{3,}/", $value);
+    $paragraphs = preg_split(
+        "/\n{3,}/",
+        $value
+    );
 
     $output = [];
 
     foreach ($paragraphs as $paragraph) {
+
         /*
          * Escape the text before adding HTML markup.
          */
@@ -156,18 +192,26 @@ function paragraphs($value)
          * Two newline characters mean
          * one blank line = visual line break.
          */
-        $paragraph = preg_replace("/\n{2}/", "<br>", $paragraph);
+        $paragraph = preg_replace(
+            "/\n{2}/",
+            '<br>',
+            $paragraph
+        );
 
         /*
          * A normal newline becomes a space,
          * allowing the browser to wrap the text naturally.
          */
-        $paragraph = preg_replace("/\n/", " ", $paragraph);
+        $paragraph = preg_replace(
+            "/\n/",
+            ' ',
+            $paragraph
+        );
 
-        $output[] = "<p>" . $paragraph . "</p>";
+        $output[] = '<p>' . $paragraph . '</p>';
     }
 
-    return implode("", $output);
+    return implode('', $output);
 }
 
 function items($value)
@@ -176,21 +220,14 @@ function items($value)
         return [];
     }
 
-    if (is_array($value)) {
-        $output = [];
-
-        foreach ($value as $block) {
-            $output = array_merge(
-                $output,
-                array_filter(array_map("trim", preg_split('/\r\n|\r|\n/', (string) $block)))
-            );
-        }
-
-        return $output;
-    }
-
-    return array_filter(array_map("trim", preg_split('/\r\n|\r|\n/', (string) $value)));
+    return array_filter(
+        array_map(
+            'trim',
+            preg_split('/\r\n|\r|\n/', $value)
+        )
+    );
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -209,7 +246,7 @@ function items($value)
 
 <link
     rel="stylesheet"
-    href="css/presentation-new.css"
+    href="css/presentation.css"
 >
 
 </head>
@@ -220,18 +257,28 @@ function items($value)
 <?php foreach ($slides as $index => $slide): ?>
 
 <?php
+
 $slideNumber = $index + 1;
 
-$slideId = "slide" . $slideNumber;
+$slideId = 'slide' . $slideNumber;
 
-$isFirst = $index === 0;
+$isFirst = ($index === 0);
 
-$isLast = $index === $totalSlides - 1;
+$isLast = ($index === $totalSlides - 1);
+
+$slideNotes = $speakerNotes[$slideNumber] ?? '';
+if ($isFirst && $topNotes !== '') {
+    $slideNotes = $topNotes . ($slideNotes !== '' ? "\n\n" . $slideNotes : '');
+}
+if ($isLast && $tailNotes !== '') {
+    $slideNotes .= ($slideNotes !== '' ? "\n\n" : '') . $tailNotes;
+}
+
 ?>
 
 
 <section
-    class="slide <?= $isFirst ? "title-slide" : "" ?>"
+    class="slide <?= $isFirst ? 'title-slide' : '' ?>"
     id="<?= e($slideId) ?>"
 >
 
@@ -241,11 +288,11 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- STAND-ALONE HEADING -->
 
-        <?php if (!empty($slide["heading"])): ?>
+        <?php if (!empty($slide['heading'])): ?>
 
             <div class="slide-heading">
 
-                <h1><?= e($slide["heading"]) ?></h1>
+                <h1><?= e($slide['heading']) ?></h1>
 
             </div>
 
@@ -254,10 +301,10 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- EYEBROW -->
 
-        <?php if (!empty($slide["eyebrow"])): ?>
+        <?php if (!empty($slide['eyebrow'])): ?>
 
             <p class="eyebrow">
-                <?= e($slide["eyebrow"]) ?>
+                <?= e($slide['eyebrow']) ?>
             </p>
 
         <?php endif; ?>
@@ -265,10 +312,10 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- OLD TITLE -->
 
-        <?php if (!empty($slide["title"])): ?>
+        <?php if (!empty($slide['title'])): ?>
 
             <h1>
-                <?= lines($slide["title"]) ?>
+                <?= lines($slide['title']) ?>
             </h1>
 
         <?php endif; ?>
@@ -276,10 +323,10 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- SUBTITLE -->
 
-        <?php if (!empty($slide["subtitle"])): ?>
+        <?php if (!empty($slide['subtitle'])): ?>
 
             <h2>
-                <?= lines($slide["subtitle"]) ?>
+                <?= lines($slide['subtitle']) ?>
             </h2>
 
         <?php endif; ?>
@@ -287,10 +334,10 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- DESCRIPTION -->
 
-        <?php if (!empty($slide["description"])): ?>
+        <?php if (!empty($slide['description'])): ?>
 
             <p class="subtitle">
-                <?= e($slide["description"]) ?>
+                <?= e($slide['description']) ?>
             </p>
 
         <?php endif; ?>
@@ -298,19 +345,19 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- TEXT -->
 
-        <?php if (!empty($slide["text"])): ?>
+        <?php if (!empty($slide['text'])): ?>
 
-            <?= paragraphs($slide["text"]) ?>
+            <?= paragraphs($slide['text']) ?>
 
         <?php endif; ?>
 
 
         <!-- AUTHOR -->
 
-        <?php if (!empty($slide["author"])): ?>
+        <?php if (!empty($slide['author'])): ?>
 
             <p class="author">
-                <?= e($slide["author"]) ?>
+                <?= e($slide['author']) ?>
             </p>
 
         <?php endif; ?>
@@ -318,15 +365,15 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- IMAGES -->
 
-        <?php if (!empty($slide["image"])): ?>
+        <?php if (!empty($slide['image'])): ?>
 
-            <?php if (count($slide["image"]) === 1): ?>
+            <?php if (count($slide['image']) === 1): ?>
 
                 <div class="slide-image">
 
                     <img
-                        src="<?= e($slide["image"][0]) ?>"
-                        alt="<?= e($slide["heading"] ?? ($slide["title"] ?? "")) ?>"
+                        src="<?= e($slide['image'][0]) ?>"
+                        alt="<?= e($slide['heading'] ?? $slide['title'] ?? '') ?>"
                     >
 
                 </div>
@@ -335,11 +382,11 @@ $isLast = $index === $totalSlides - 1;
 
                 <div class="slide-images">
 
-                    <?php foreach ($slide["image"] as $image): ?>
+                    <?php foreach ($slide['image'] as $image): ?>
 
                         <img
                             src="<?= e($image) ?>"
-                            alt="<?= e($slide["heading"] ?? ($slide["title"] ?? "")) ?>"
+                            alt="<?= e($slide['heading'] ?? $slide['title'] ?? '') ?>"
                         >
 
                     <?php endforeach; ?>
@@ -353,7 +400,7 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- FLOW DIAGRAM -->
 
-        <?php if (($slide["type"] ?? "") === "flow"): ?>
+        <?php if (($slide['type'] ?? '') === 'flow'): ?>
 
             <div class="flow">
 
@@ -383,11 +430,11 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- LIST -->
 
-        <?php if (($slide["type"] ?? "") === "list"): ?>
+        <?php if (($slide['type'] ?? '') === 'list'): ?>
 
             <ul>
 
-                <?php foreach (items($slide["items"] ?? "") as $item): ?>
+                <?php foreach (items($slide['items'] ?? '') as $item): ?>
 
                     <li>
                         <?= e($item) ?>
@@ -402,7 +449,7 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- COMPARE -->
 
-        <?php if (($slide["type"] ?? "") === "compare"): ?>
+        <?php if (($slide['type'] ?? '') === 'compare'): ?>
 
             <?php
             /*
@@ -417,7 +464,7 @@ $isLast = $index === $totalSlides - 1;
              *
              * Existing column1=/column2= slides remain supported.
              */
-            $columns = $slide["column"] ?? [];
+            $columns = $slide['column'] ?? [];
 
             if (!is_array($columns)) {
                 $columns = [$columns];
@@ -426,15 +473,12 @@ $isLast = $index === $totalSlides - 1;
             if (empty($columns)) {
                 $columns = [];
 
-                if (!empty($slide["column1"])) {
-                    $columns[] = $slide["column1"];
+                if (!empty($slide['column1'])) {
+                    $columns[] = $slide['column1'];
                 }
 
-                if (!empty($slide["column2"])) {
-                    $columns[] = $slide["column2"];
-                }
-                if (!empty($slide["column3"])) {
-                    $columns[] = $slide["column3"];
+                if (!empty($slide['column2'])) {
+                    $columns[] = $slide['column2'];
                 }
             }
             ?>
@@ -443,22 +487,17 @@ $isLast = $index === $totalSlides - 1;
 
                 <?php foreach ($columns as $columnIndex => $column): ?>
 
-                    <?php if (isset($slide["items"]) && is_array($slide["items"])) {
-                        $columnItems = items($slide["items"][$columnIndex] ?? "");
-                    } else {
-                        $itemsKey = "items" . ($columnIndex + 1);
-                        $columnItems = items($slide[$itemsKey] ?? "");
-                    } ?>
+                    <?php $itemsKey = 'items' . ($columnIndex + 1); ?>
 
                     <div class="compare-column">
 
                         <h3><?= e($column) ?></h3>
 
-                        <?php if (!empty($columnItems)): ?>
+                        <?php if (!empty($slide[$itemsKey])): ?>
 
                             <ul>
 
-                                <?php foreach ($columnItems as $item): ?>
+                                <?php foreach (items($slide[$itemsKey]) as $item): ?>
 
                                     <li>
                                         <?= e($item) ?>
@@ -481,10 +520,10 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- SCOPE -->
 
-        <?php if (!empty($slide["scope"])): ?>
+        <?php if (!empty($slide['scope'])): ?>
 
             <div class="scope">
-                <?= e($slide["scope"]) ?>
+                <?= e($slide['scope']) ?>
             </div>
 
         <?php endif; ?>
@@ -492,7 +531,7 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- TABLE -->
 
-        <?php if (($slide["type"] ?? "") === "table"): ?>
+        <?php if (($slide['type'] ?? '') === 'table'): ?>
 
             <table>
 
@@ -547,7 +586,7 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- FEEDBACK DIAGRAM -->
 
-        <?php if (($slide["type"] ?? "") === "feedback"): ?>
+        <?php if (($slide['type'] ?? '') === 'feedback'): ?>
 
             <div class="feedback">
 
@@ -570,19 +609,48 @@ $isLast = $index === $totalSlides - 1;
 
         <!-- NOTE -->
 
-        <?php if (!empty($slide["note"])): ?>
+        <?php if (!empty($slide['note'])): ?>
 
-            <?= paragraphs($slide["note"]) ?>
+            <?= paragraphs($slide['note']) ?>
 
+        <?php endif; ?>
+
+
+        <!-- SPEAKER NOTES -->
+
+        <?php if ($slideNotes !== ''): ?>
+            <button
+                class="speaker-notes-button"
+                type="button"
+                data-notes-target="speaker-notes-<?= $slideNumber ?>"
+            >
+                Speaker Notes
+            </button>
+
+            <div
+                class="speaker-notes"
+                id="speaker-notes-<?= $slideNumber ?>"
+                hidden
+            >
+                <div class="speaker-notes-panel" role="dialog" aria-modal="true" aria-labelledby="speaker-notes-title-<?= $slideNumber ?>">
+                    <div class="speaker-notes-header">
+                        <h2 id="speaker-notes-title-<?= $slideNumber ?>">Speaker Notes</h2>
+                        <button class="speaker-notes-close" type="button" data-notes-close aria-label="Close speaker notes">&times;</button>
+                    </div>
+                    <div class="speaker-notes-body">
+                        <?= paragraphs($slideNotes) ?>
+                    </div>
+                </div>
+            </div>
         <?php endif; ?>
 
 
         <!-- CLOSING -->
 
-        <?php if (!empty($slide["closing"])): ?>
+        <?php if (!empty($slide['closing'])): ?>
 
             <p class="closing">
-                <?= e($slide["closing"]) ?>
+                <?= e($slide['closing']) ?>
             </p>
 
         <?php endif; ?>
@@ -629,6 +697,38 @@ $isLast = $index === $totalSlides - 1;
 
 <?php endforeach; ?>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-notes-target]').forEach(function (button) {
+        button.addEventListener('click', function () {
+            const notes = document.getElementById(button.dataset.notesTarget);
+            if (notes) notes.hidden = false;
+        });
+    });
+
+    document.querySelectorAll('[data-notes-close]').forEach(function (button) {
+        button.addEventListener('click', function () {
+            const notes = button.closest('.speaker-notes');
+            if (notes) notes.hidden = true;
+        });
+    });
+
+    document.querySelectorAll('.speaker-notes').forEach(function (notes) {
+        notes.addEventListener('click', function (event) {
+            if (event.target === notes) notes.hidden = true;
+        });
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            document.querySelectorAll('.speaker-notes:not([hidden])').forEach(function (notes) {
+                notes.hidden = true;
+            });
+        }
+    });
+});
+</script>
 
 </body>
 

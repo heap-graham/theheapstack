@@ -41,7 +41,7 @@
             </header>
 
             <!-- Your CSS automatically centers h2 headings globally -->
-            <img src="images/HBB.png" alt="Human Biology Basic" />
+            <img src="images/HBB-1.2.png" alt="Human Biology Basics" />
             
              <!-- PULL IN THE HOME RETURN BUTTON -->
             <?php include 'includes/home-button.php'; ?>           

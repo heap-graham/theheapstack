@@ -1,6 +1,6 @@
 {
     "livePreviewUseDevServer": true,
-    "livePreviewServerURL": "https://localhost/WIMS/Sandbox/Example 4",
+    "livePreviewServerURL": "https://localhost/theheapstack/WIMS",
     "livePreviewServerProjectPath": "/",
     "livePreviewHotReloadSupported": false,
     "livePreviewFramework": "Custom"

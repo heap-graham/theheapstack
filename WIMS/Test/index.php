@@ -8,13 +8,13 @@
 
         <meta name="description" content="Know Thyself. Measure. Learn. Adapt." />
 
-        <meta property="og:title" content="June Fasting Report (2026) - YouTube" />
+        <meta property="og:title" content="Weight Insight Mentoring Service - WIMS" />
         <meta property="og:description" content="Know Thyself. Measure. Learn. Adapt." />
         <meta property="og:url" content="test.theheapstack.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Weight Insight Mentor" />
 
-        <meta property="og:image" content="https://test.theheapstack.com/images/ths-wim-logo-s.jpg" />
+        <meta property="og:image" content="/images/ths-wim-logo-s.jpg" />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="1800" />
         <meta property="og:image:alt" content="Weight Insight Mentor logo and branding" />
@@ -27,9 +27,9 @@
     <header>
             <hr>
             
-            <h1> Weight Insight Mentoring service (WIMS) </h1>
+            <h1> Weight Insight Mentoring Service (WIMS) </h1>
             <br><br>
-            <h1> Educational Platform to Support Positive Weight Change </h1>    
+            <h1> An Educational Platform to Support Positive Weight Change </h1>    
             
             <hr>
     </header>
@@ -51,6 +51,7 @@
             <aside class="left-menu">
                 <h2>WIMS Resources</h2>
                 <ul>
+                    <li><a href="WPL4-Slide-Download.php">June Fasting Report 2026 (Slides &amp; Speaker Notes)</a></li>
                     <li><a href="WPL3-June%20Fasting%20Yt.php">June Fasting Report 2026 (YouTube Playlist)</a></li>
                     <li><a href="WPL1-June-2026-Fasting-Report.php">June Fasting Report 2026 (html) </a></li>
                     <li><a href="WPL2-Download.php">Download for June Fasting Report 2026 (pdf) 

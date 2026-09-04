@@ -57,3 +57,15 @@ youtube=https://youtu.be/XaG7RHOzYtc
 title=“In praise of a beautiful Lady”
 subtitle=
 youtube=https://youtu.be/ch-Nts06HJc
+
+title=“Can we really walk away”
+subtitle=
+youtube=https://youtu.be/6gbdVj5f1NQ
+
+title=“Slowly letting go ...”
+subtitle=
+youtube=https://youtu.be/PgKFgVi3b5E
+
+title=“An Emotional Time”
+subtitle=
+youtube=https://youtu.be/FPecw3dkQYc

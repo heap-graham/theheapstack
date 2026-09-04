@@ -41,7 +41,7 @@
             </header>
 
             <!-- Your CSS automatically centers h2 headings globally -->
-            <img src="images/release-note-v1-1.PNG" alt="Release Note for R1.1" />
+            <img src="images/release-note-v1-2.png" alt="Release Note for R1.2" />
             
              <!-- PULL IN THE HOME RETURN BUTTON -->
             <?php include 'includes/home-button.php'; ?>      

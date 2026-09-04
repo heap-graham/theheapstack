@@ -41,7 +41,7 @@
             </header>
 
             <!-- Your CSS automatically centers h2 headings globally -->
-            <img src="images/WPT.png" alt="WIMS Practical Theory" />
+            <img src="images/WPT-1.2.png" alt="WIMS Practical Theory" />
             
              <!-- PULL IN THE HOME RETURN BUTTON -->
             <?php include 'includes/home-button.php'; ?>          

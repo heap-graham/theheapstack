@@ -41,7 +41,7 @@
             </header>
 
             <!-- Your CSS automatically centers h2 headings globally -->
-            <img src="images/WIMS%20-%20WIMS%20Digest.png" alt="Main Website Picture" />
+            <img src="images/WIMS%20-%20WIMS%20Digest-1.2.png" alt="WIMS Digest" />
             
              <!-- PULL IN THE HOME RETURN BUTTON -->
             <?php include 'includes/home-button.php'; ?>          
