@@ -1,0 +1,16 @@
+[STORY]: Yuka's Backstory
+[FRAMES]:13
+[FRAMES LIST]
+01-Home Northern Japan
+02-Coffee with friends
+03-The Question
+04-After they leave
+05-Childhood
+06-First Day On Site
+07-Hard Work
+08-Leading the team
+09-Success
+10-The realisation
+11-The decision
+12-Tokyo the threashold
+13-The journey to Ireland begins

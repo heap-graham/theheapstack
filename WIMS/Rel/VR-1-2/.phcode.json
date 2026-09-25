@@ -1,0 +1,7 @@
+{
+    "livePreviewUseDevServer": true,
+    "livePreviewServerURL": "https://localhost/theheapstack/WIMS",
+    "livePreviewServerProjectPath": "/",
+    "livePreviewHotReloadSupported": false,
+    "livePreviewFramework": "Custom"
+}

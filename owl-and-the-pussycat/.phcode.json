@@ -1,0 +1,7 @@
+{
+    "livePreviewUseDevServer": true,
+    "livePreviewServerURL": "http://localhost/theheapstack/",
+    "livePreviewServerProjectPath": "/",
+    "livePreviewHotReloadSupported": false,
+    "livePreviewFramework": "Custom"
+}

@@ -1,0 +1,41 @@
+OPW DIRECTORY TREE
+==================
+
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\characters
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\css
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\images
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\poems
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[00] - character-reference
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[00] - character-reference\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[01] - grahams-backstory
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[02] - yukas-backstory
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[02] - yukas-backstory\01
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[02] - yukas-backstory\02
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[03] - story1-the-meeting
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[03] - story1-the-meeting\03
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[04] - story 2-lighnening
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[04] - story 2-lighnening\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[05] - story 3-quality-time
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[05] - story 3-quality-time\01-quality-time
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[05] - story 3-quality-time\01-quality-time\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[05] - story 3-quality-time\02-quality-time
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[05] - story 3-quality-time\02-quality-time\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[06] - story 4-quarrel
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[07] - story 5-the-truth
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops01-poetry\[07] - story 6-black-hole
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\01-yuka-meets-the-pussycat
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\01-yuka-meets-the-pussycat\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\02-the-owl-confronts-the-pussycat
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\02-the-owl-confronts-the-pussycat\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\03-yuka-remembers-the-pussycat-airport
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\03-yuka-remembers-the-pussycat-airport\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops02-backstory - yuka-meets-the-pussycat\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops03-birthday
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops03-birthday\archive
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\stories\ops04-The Court of King Arthur
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\text
+C:\xampp\htdocs\theheapstack\owl-pussycat-world\world

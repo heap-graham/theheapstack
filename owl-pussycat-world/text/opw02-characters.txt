@@ -1,0 +1,37 @@
+Name: The Owl
+Place:  OP World
+Role: Keeper of Stories
+
+Name: The Pussycat
+Place: OP World
+Role: Keeper of Hearts
+
+Name: The Boat
+Place: OP World
+Role: Sailor of Dreams
+
+Name: Graham
+Place: The Human World 
+Role: The Dreamer and Storyteller
+
+Name: Yuka
+Place: The Human World
+Role: Lady of Serenity
+
+Name: King Arthur 
+Place: OP World
+Role: King of the knights of the round table.
+
+Name: Lady Yuka 
+Place: OP World
+Role: Princess of Serenity
+
+Name: Luciana 
+Place: Human World 
+Role: Friend to Yuka
+
+Name: Young Yuka
+Place: The Human World
+Role: Yuka at 12 years old
+
+

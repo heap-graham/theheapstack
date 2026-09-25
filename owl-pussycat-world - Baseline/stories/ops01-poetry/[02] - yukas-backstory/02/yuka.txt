@@ -1,0 +1,7 @@
+[STORY]: Yuka's Backstory
+[FRAMES]:4
+[FRAMES LIST]
+01-The Phone Call
+02-After the Call
+03-The Decision
+04-The Promise to Herself

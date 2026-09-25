@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: gray;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.editor-container {
+    max-width: 794px;
+    margin: auto;
+}
+
+.toolbar {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.page {
+    background: white;
+    min-height: 1123px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    min-height: 1000px;
+
+    padding-top: 1.5em;
+    padding-left: 10px;
+
+    border: solid;
+    outline: none;
+    resize: none;
+    color: black;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1;
+    color: darkblue;
+    box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+[STORY]: Graham's Backstory
+[FRAMES]:13
+[FRAMES LIST]
+01-Burnley
+02-Mother
+03-Father
+04-Curious
+05-Einstein
+06-Library
+07-University
+08-Phd-Industry
+09-A different Choice
+10-Loss
+11-Marriage failure
+12-Single Parent
+13-Still Curious

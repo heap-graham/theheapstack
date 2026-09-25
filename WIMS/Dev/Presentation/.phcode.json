@@ -1,6 +1,6 @@
 {
     "livePreviewUseDevServer": true,
-    "livePreviewServerURL": "http://localhost/WIMS/",
+    "livePreviewServerURL": "http://localhost/theheapstack/WIMS/Dev/Presentation/",
     "livePreviewServerProjectPath": "/",
     "livePreviewHotReloadSupported": false,
     "livePreviewFramework": "Custom"

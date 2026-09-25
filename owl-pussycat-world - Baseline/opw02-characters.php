@@ -1,0 +1,387 @@
+<?php
+
+$debug = false;
+
+$imageDir = __DIR__ . "/images/";
+$metadataFile = __DIR__ . "/text/opw02-characters.txt";
+
+$characters = [];
+
+
+/* Read character information */
+
+if (is_file($metadataFile)) {
+
+    $lines = file($metadataFile, FILE_IGNORE_NEW_LINES);
+    $record = [];
+
+    foreach ($lines as $line) {
+
+        $line = trim($line);
+
+        if ($line === "") {
+
+            if (!empty($record)) {
+                $characters[] = $record;
+            }
+
+            $record = [];
+
+        } elseif (strpos($line, ":") !== false) {
+
+            [$key, $value] = explode(":", $line, 2);
+
+            $record[strtolower(trim($key))] = trim($value);
+        }
+    }
+
+    if (!empty($record)) {
+        $characters[] = $record;
+    }
+}
+
+
+/* Find character images */
+
+$images = is_dir($imageDir) ? scandir($imageDir) : [];
+
+foreach ($characters as $index => &$character) {
+
+    $character["number"] = ($index * 2) + 1;
+    $character["icon"] = "";
+    $character["details"] = "";
+
+    $iconNumber = str_pad(
+        $character["number"],
+        2,
+        "0",
+        STR_PAD_LEFT
+    );
+
+    $detailsNumber = str_pad(
+        $character["number"] + 1,
+        2,
+        "0",
+        STR_PAD_LEFT
+    );
+
+    foreach ($images as $candidate) {
+
+        if (preg_match(
+            '/^cop' . $iconNumber . '-.*\.(png|jpg|jpeg|webp)$/i',
+            $candidate
+        )) {
+
+            $character["icon"] = $candidate;
+        }
+
+        if (preg_match(
+            '/^cop' . $detailsNumber . '-.*\.(png|jpg|jpeg|webp)$/i',
+            $candidate
+        )) {
+
+            $character["details"] = $candidate;
+        }
+    }
+}
+
+unset($character);
+
+
+/* Debug Information */
+
+if ($debug) {
+
+    echo '<div style="
+        margin:20px;
+        padding:15px;
+        border:2px solid red;
+        background:#fff;
+        color:#000;
+        font-family:monospace;
+    ">';
+
+    echo '<h2>DEBUG</h2>';
+
+    echo '<p><strong>Image directory:</strong> '
+        . htmlspecialchars($imageDir)
+        . '</p>';
+
+    echo '<p><strong>Image directory exists:</strong> '
+        . (is_dir($imageDir) ? 'YES' : 'NO')
+        . '</p>';
+
+    echo '<p><strong>Metadata file:</strong> '
+        . htmlspecialchars($metadataFile)
+        . '</p>';
+
+    echo '<p><strong>Metadata file exists:</strong> '
+        . (is_file($metadataFile) ? 'YES' : 'NO')
+        . '</p>';
+
+    echo '<p><strong>Characters loaded:</strong> '
+        . count($characters)
+        . '</p>';
+
+    echo '<h3>Character Image Matching</h3>';
+
+    foreach ($characters as $debugCharacter) {
+
+        echo '<p>';
+
+        echo '<strong>'
+            . htmlspecialchars($debugCharacter["name"] ?? "")
+            . '</strong><br>';
+
+        echo 'Icon expected: cop'
+            . str_pad(
+                $debugCharacter["number"],
+                2,
+                "0",
+                STR_PAD_LEFT
+            )
+            . '-<br>';
+
+        echo 'Icon found: '
+            . htmlspecialchars(
+                $debugCharacter["icon"] ?: 'NONE'
+            )
+            . '<br>';
+
+        echo 'Details expected: cop'
+            . str_pad(
+                $debugCharacter["number"] + 1,
+                2,
+                "0",
+                STR_PAD_LEFT
+            )
+            . '-<br>';
+
+        echo 'Details found: '
+            . htmlspecialchars(
+                $debugCharacter["details"] ?: 'NONE'
+            );
+
+        echo '</p>';
+    }
+
+    echo '<h3>Images Seen by PHP</h3>';
+
+    if (!empty($images)) {
+
+        echo '<ul>';
+
+        foreach ($images as $debugImage) {
+
+            echo '<li>'
+                . htmlspecialchars($debugImage)
+                . '</li>';
+        }
+
+        echo '</ul>';
+
+    } else {
+
+        echo '<p>NO IMAGES FOUND</p>';
+    }
+
+    echo '</div>';
+}
+
+
+/* Featured Character */
+
+$featuredIndex = null;
+
+if (!empty($characters)) {
+
+    $featuredIndex = array_rand($characters);
+}
+
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Characters - The Owl and the Pussycat World</title>
+
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <ul>
+
+        <li>
+            <a href="index.php">Home</a>
+        </li>
+
+        <li>
+            <a href="opw01-home.php">Poetry</a>
+        </li>
+
+        <li>
+            <a href="opw02-characters.php">Characters</a>
+        </li>
+
+        <li>
+            <a href="stories/">Graphic Stories</a>
+        </li>
+
+        <li>
+            <a href="world/">World</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+    <h1>Characters</h1>
+
+
+<?php
+
+/* Display Featured Character */
+
+if (
+    $featuredIndex !== null &&
+    isset($characters[$featuredIndex])
+) {
+
+    $character = $characters[$featuredIndex];
+
+?>
+
+    <div class="featured-poem-container">
+
+        <article class="poem poem-item featured-poem">
+
+            <h3>
+                <?= htmlspecialchars(
+                    $character["name"] ?? ""
+                ) ?>
+            </h3>
+
+
+<?php if (!empty($character["icon"])): ?>
+
+            <a
+                href="opw03-character.php?character=<?= $featuredIndex ?>"
+            >
+
+                <img
+                    src="images/<?= htmlspecialchars(
+                        $character["icon"]
+                    ) ?>"
+                    alt="<?= htmlspecialchars(
+                        $character["name"] ?? ""
+                    ) ?>"
+                    class="poem-image"
+                >
+
+            </a>
+
+<?php endif; ?>
+
+
+<?php if (!empty($character["role"])): ?>
+
+            <p class="poem-subtitle">
+                <?= htmlspecialchars(
+                    $character["role"]
+                ) ?>
+            </p>
+
+<?php endif; ?>
+
+        </article>
+
+    </div>
+
+    <br>
+
+    <h2>Featured Character</h2>
+    <p><br/></p>
+
+<?php
+
+}
+
+?>
+
+
+    <h2>Characters</h2>
+
+    <div class="poem-list">
+
+
+<?php
+
+/* Display Character Collection */
+
+foreach ($characters as $index => $character) {
+
+?>
+
+        <article class="poem-item">
+
+            <h3>
+                <?= htmlspecialchars(
+                    $character["name"] ?? ""
+                ) ?>
+            </h3>
+
+
+<?php if (!empty($character["icon"])): ?>
+
+            <a
+                href="opw03-character.php?character=<?= $index ?>"
+            >
+
+                <img
+                    src="images/<?= htmlspecialchars(
+                        $character["icon"]
+                    ) ?>"
+                    alt="<?= htmlspecialchars(
+                        $character["name"] ?? ""
+                    ) ?>"
+                    class="poem-image"
+                >
+
+            </a>
+
+<?php endif; ?>
+
+        </article>
+
+<?php
+
+}
+
+?>
+
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 Pennylane Poetry. All rights reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
